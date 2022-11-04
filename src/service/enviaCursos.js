@@ -1,4 +1,4 @@
-const enviaCursos = async (url, id) => {
+const enviaCursos = async (url, cursosId) => {
   try {
     const response = await fetch(url, {
       method: "POST",
@@ -6,7 +6,7 @@ const enviaCursos = async (url, id) => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        id: id,
+        cursosIniciados: cursosId,
       }),
     });
     const dados = response.json();
