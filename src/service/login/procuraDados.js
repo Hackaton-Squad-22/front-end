@@ -1,5 +1,5 @@
 async function procuraDados(email, password, arr) {
-  const response = await fetch("http://localhost:4000/users");
+  const response = await fetch("https://squad22-hackathon.herokuapp.com/users");
   const dados = await response.json();
   let erroEmail = document.querySelector(".erro-email");
   let erroPassword = document.querySelector(".erro-password");

@@ -18,4 +18,4 @@ const enviaCursos = async (url, cursosId) => {
   }
 };
 
-export default enviaCursos;
+export default enviaCursos

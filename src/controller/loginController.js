@@ -1,5 +1,5 @@
-import procuraDados from "../service/procuraDados.js";
-import VerificacaoLogin from "../service/verificaLogin.js";
+import procuraDados from "../service/login/procuraDados.js";
+import VerificacaoLogin from "../service/login/verificaLogin.js";
 
 const form = document.querySelector("form");
 const email = document.querySelector(".mail");
