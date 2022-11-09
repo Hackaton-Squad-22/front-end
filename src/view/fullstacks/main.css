@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+}
+
+section h6 {
+  margin-left: 2rem;
+}
+
+section ul {
+  display: flex;
+  margin: 4px;
+}
+
+section ul li {
+  margin-right: 6rem;
+  list-style: none;
+  font-size: 0.9rem;
+}
+
+section {
+  margin: auto;
+  width: 90%;
+  outline: 1px solid rgb(219, 219, 219);
+  padding: 4px;
+}
+
+section:hover {
+  background-color: rgba(206, 206, 206, 0.205);
+}
+
+.finished {
+  border: 1px solid rgba(206, 206, 206, 0.205);
+  height: 16px;
+}
+
+.accordion {
+  margin: 60px;
+}
+
+.accordion-button span {
+  margin-right: 24px;
+  width: 28px;
+  height: 28px;
+  padding-top: 4px;
+  outline: 1px solid;
+  text-align: center;
+  border-radius: 50%;
+}
