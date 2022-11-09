@@ -3,7 +3,22 @@ const urlFullstack = 'https://squad22-hackathon.herokuapp.com/fullstacks';
 const urlUX = 'https://squad22-hackathon.herokuapp.com/ux';
 const urlQA = 'https://squad22-hackathon.herokuapp.com/qa';
 
-getUserAndCourses(urlFullstack, 'Fullstacks');
+// selectPlan('Fullstacks');
+selectPlan('UX');
+// selectPlan('QA');
+
+function selectPlan(name){
+    switch(name){
+        case 'QA':
+            getUserAndCourses(urlQA, name);
+            break;
+        case 'UX':
+            getUserAndCourses(urlUX, name);
+            break;
+        default:
+            getUserAndCourses(urlFullstack, name);
+    }
+}
 
 async function getUserAndCourses(url, name){
     try{
@@ -35,9 +50,19 @@ function getCurrentUserId(){
 function compareCourses(promiseValue, name){
     const user = getUser(promiseValue)
     const courses = promiseValue[1];
-    let filteredCourses = getCoursesIdList(courses).filter(course => {
-        return user.cursosFullstacks.includes(course);
-    })
+    let filteredCourses = [];
+    if (name === 'Fullstacks'){
+        filteredCourses = getCoursesIdList(courses).filter(course => {
+            switch(name){
+                case 'QA':
+                    return user.cursosQa.includes(course);
+                case 'UX':
+                    return user.Ux.includes(course);
+                default:
+                    return user.cursosFullstacks.includes(course);
+            }
+        })
+    }
     return findPercentage(courses.length, filteredCourses.length);
 }
 
@@ -51,9 +76,7 @@ function getCoursesIdList(courses){
 function findPercentage(total, amount){
     let percentage = ((amount / total)*100).toFixed(2);
     console.log('porcentagem', percentage)
-    return;
 }
-
 
 
 
