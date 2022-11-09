@@ -3,8 +3,8 @@ const urlFullstack = 'https://squad22-hackathon.herokuapp.com/fullstacks';
 const urlUX = 'https://squad22-hackathon.herokuapp.com/ux';
 const urlQA = 'https://squad22-hackathon.herokuapp.com/qa';
 
-// selectPlan('Fullstacks');
-selectPlan('UX');
+selectPlan('Fullstacks');
+// selectPlan('UX');
 // selectPlan('QA');
 
 function selectPlan(name){
@@ -74,9 +74,25 @@ function getCoursesIdList(courses){
 }
 
 function findPercentage(total, amount){
-    let percentage = ((amount / total)*100).toFixed(2);
-    console.log('porcentagem', percentage)
+    let percentage = 0;
+    if (amount > 0){
+        percentage = ((amount / total)*100).toFixed(2);
+        console.log('porcentagem', percentage)
+        showProgressBar(percentage);
+        return;
+    }
+    showProgressBar(0);
 }
+
+function showProgressBar(percentage){
+    const progressBar = document.querySelector('[data-progress="bar"]');
+    const progressNumber = document.querySelector('[data-progress="number"]');
+    const userProgressString = `${percentage}%`;
+    console.log(userProgressString);
+    progressBar.style.transform = `translateX(${userProgressString})`;
+    progressNumber.textContent = userProgressString;
+}
+
 
 
 
