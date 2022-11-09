@@ -1,0 +1,24 @@
+.progres-bar__wrapper{
+    background-color: #FF5A23;
+    border: solid 1px #FF5A23;
+    border-radius: 10px;
+    height: 32px;
+    overflow: hidden;
+    position: relative;
+    width: 360px;
+}
+
+.progress-bar{
+    background-color: #FFF;
+    height: inherit;
+    position: absolute;
+    width: inherit;
+}
+
+.progress-number{
+    font-size: 2rem;
+    margin: 0;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+}
