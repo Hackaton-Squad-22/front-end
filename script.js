@@ -84,8 +84,8 @@ function obtemPorcentagem(total, amostra){
 };
 
 function mostraProgresso(porcentagem){
-  const barraDeProgresso = document.querySelector('[data-progress="bar"]');
-  const progressoNumero = document.querySelector('[data-progress="number"]');
+  const barraDeProgresso = document.querySelector('[data-progresso="barra"]');
+  const progressoNumero = document.querySelector('[data-progresso="numero"]');
   const progressoDoUsuarioString = `${porcentagem}%`;
   console.log(progressoDoUsuarioString);
   barraDeProgresso.style.transform = `translateX(${progressoDoUsuarioString})`;

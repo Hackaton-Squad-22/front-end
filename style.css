@@ -1,22 +1,22 @@
-.progres-bar__wrapper{
-    background-color: #FF5A23;
-    border: solid 1px #FF5A23;
-    border-radius: 10px;
-    height: 32px;
+.barra-progresso__wrapper{
+    background-color: #908EA6;
+    border-radius: 1px;
+    height: 6.25px;
     overflow: hidden;
     position: relative;
-    width: 360px;
+    width: 236px;
 }
 
-.progress-bar{
-    background-color: #FFF;
+.barra-progresso{
+    background-color: #EAEAEA;
     height: inherit;
     position: absolute;
     width: inherit;
 }
 
-.progress-number{
-    font-size: 2rem;
+.progresso-numero{
+    color: #FFF;
+    font-size: .4rem;
     margin: 0;
     position: absolute;
     right: 50%;
