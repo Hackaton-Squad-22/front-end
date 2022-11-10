@@ -37,12 +37,23 @@ section:hover {
   margin: 60px;
 }
 
+.accordion-item {
+  margin-bottom: 16px;
+  border-radius: 0 !important;
+  border: none !important;
+  outline: 1px solid rgba(206, 206, 206, 0.801);
+}
+
+.accordion-button {
+  background-color: rgba(206, 206, 206, 0.205) !important;
+}
+
 .accordion-button span {
   margin-right: 24px;
   width: 28px;
   height: 28px;
   padding-top: 4px;
-  outline: 1px solid;
   text-align: center;
   border-radius: 50%;
+  background-color: #fff;
 }

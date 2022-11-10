@@ -1,12 +1,14 @@
-const enviaCursos = async (url, cursosId) => {
+const enviaCursos = async (url, cursosFullstacks = [], cursoQa = [], cursoUx = []) => {
   try {
     const response = await fetch(url, {
       method: "POST",
       headers: {
-        "Content-Type": "application/json",
+        "Content-Type": "application/json;charset=UTF-8",
       },
       body: JSON.stringify({
-        cursosIniciados: cursosId,
+        cursosFulltacks: cursosFullstacks,
+        cursosQa: cursoQa,
+        cursosUx: cursoUx,
       }),
     });
     const dados = response.json();
@@ -18,4 +20,4 @@ const enviaCursos = async (url, cursosId) => {
   }
 };
 
-export default enviaCursos
+export default enviaCursos;

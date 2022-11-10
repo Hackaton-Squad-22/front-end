@@ -1,6 +1,6 @@
 const conteudo = (entrada) => {
   const conteudo = `
-  <section>
+  <section data-id="${entrada._id}" class="conteudo">
   <h6>${entrada.curso}</h6>
   <ul>
     <li class="duracao">${entrada.duracao}</li>
@@ -12,4 +12,4 @@ const conteudo = (entrada) => {
   return conteudo;
 };
 
-export default conteudo
+export default conteudo;
