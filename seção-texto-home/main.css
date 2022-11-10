@@ -12,7 +12,7 @@ h2 {
   line-height: 48px;
 }
 
-P { 
+P {
   font-size: var(--fonteTitulo6);
   font-family: var(--fonteFamilyTexto);
   line-height: 32px;
@@ -41,9 +41,10 @@ P {
 }
 
 .secao-media-home {
-  height: 512px;
   align-items: flex-start;
-  margin: 0 70px 0 510px;
+  margin: 0 70px 0 40%;
+  padding: 128px 0 80px 0;
+  transition: 0.2s ease;
 }
 
 .secao-media-home h2 {
@@ -69,10 +70,9 @@ P {
   padding: 10px 19px;
 }
 
-
 .secao-final-home {
-  height: 688px;
   margin: 0 70px;
+  padding: 128px 0 104px 0;
 }
 
 .secao-final-home h2 {
@@ -96,10 +96,6 @@ P {
   padding: 0 48px;
   border-right: 2px solid rgba(0, 0, 0, 0.5);
 }
-
-/* .discord-container-section:first-child {
-  width: 148px;
-} */
 
 .discord-container-section:last-child {
   border: none;
@@ -125,4 +121,24 @@ P {
 
 .discord-btn img {
   margin-right: 8px;
+}
+
+@media (max-width: 1439px) {
+  .secao-media-home {
+    margin: 0 70px 0 30%;
+  }
+}
+
+@media (max-width: 960px) {
+  .secao-media-home {
+    margin: 0 70px 0 20%;
+  }
+
+  .secao-media-home p {
+    width: 100%;
+  }
+
+  .secao-media-home h2 {
+    width: 100%;
+  }
 }
