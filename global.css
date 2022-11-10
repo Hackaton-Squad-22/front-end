@@ -24,6 +24,6 @@
   --fonteTitulo5: 25px;
   --fonteTitulo6: 20px;
   --fonteTitulo7: 16px;
-  --fonteFamilyTitulo: font-family: 'Familjen Grotesk', sans-serif;
-  --fonteFamilyTexto: font-family: 'Source Sans Pro', sans-serif;;
+  --fonteFamilyTitulo: 'Familjen Grotesk', sans-serif;
+  --fonteFamilyTexto: 'Source Sans Pro', sans-serif;;
 }
