@@ -27,3 +27,8 @@
   --fonteFamilyTitulo: font-family: 'Familjen Grotesk', sans-serif;
   --fonteFamilyTexto: font-family: 'Source Sans Pro', sans-serif;;
 }
+
+.teste {
+  display: flex;
+  justify-content: space;
+}
