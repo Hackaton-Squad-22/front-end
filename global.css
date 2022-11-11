@@ -19,11 +19,16 @@
   --fonteParagrafoMuitoPequena: 8.93px;
   --fonteTitulo1: 61.4px;
   --fonteTitulo2: 48.83px;
-  --fonteTitulo3: 39.06px;
+  --fonteTitulo3: 38px;
   --fonteTitulo4: 31.25px;
   --fonteTitulo5: 25px;
   --fonteTitulo6: 20px;
   --fonteTitulo7: 16px;
-  --fonteFamilyTitulo: font-family: 'Familjen Grotesk', sans-serif;
-  --fonteFamilyTexto: font-family: 'Source Sans Pro', sans-serif;;
+  --fonteFamilyTitulo: 'Familjen Grotesk', sans-serif;
+  --fonteFamilyTexto: 'Source Sans Pro', sans-serif;;
+}
+
+.teste {
+  display: flex;
+  justify-content: space;
 }
