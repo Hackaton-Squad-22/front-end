@@ -13,7 +13,7 @@
   background: #FDFCFF;
   backdrop-filter: blur(37.5px);
   align-items: center;
-  width: 1440px;
+  width: 100vw;
   height: 128px;
 }
 
@@ -30,6 +30,7 @@ a, a:link, a:visited, a:hover {
 }
 
 .header-navbar-link {
+  display: flex;
   text-decoration: none;
   color: #000000;
   padding: 0px;
@@ -48,15 +49,15 @@ a, a:link, a:visited, a:hover {
 .greetings {
   display: flex;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center;
   width: 116px;
-  height: 24px;
+  height: 24px; */
 
-/* H4 */
+/* H3 */
 
   font-style: normal;
   font-weight: 400;
-  font-size: var(--fonteTitulo4);
+  font-size: var(--fonteTitulo5);
   line-height: 24px;
 
 /* identical to box height, or 77% */

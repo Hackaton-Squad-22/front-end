@@ -12,7 +12,7 @@
   justify-content: center;
   background: linear-gradient(180deg, #FFFFFF 25.68%, #F4EFFF 100%);
   margin-top: 2490px;
-  width: 1440px;
+  width: 100vw;
   height: 153px;
 }
 
@@ -34,7 +34,10 @@
   display: flex;
   justify-content: space-around;
   width: 300px;
-  margin-right: 25px;
+}
+
+.nav-footer a {
+  margin-top: 5px;
 }
 
 .btn-up-top{
