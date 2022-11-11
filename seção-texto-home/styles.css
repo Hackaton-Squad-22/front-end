@@ -184,13 +184,19 @@ P {
   }
 }
 
+@media (max-width: 550px) {
+  .secao-final-home p {
+    width: 100%;
+  }
+}
+
 /* Tamanho celular */
 @media (max-width: 430px) {
   .secao-superior-home h3 {
     font-size: 28px;
     width: 85%;
   }
-  
+
   .secao-media-home {
     margin: 0 35px;
     align-items: center;
