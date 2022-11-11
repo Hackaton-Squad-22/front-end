@@ -6,7 +6,7 @@ import enviaCursos from "../service/cursos/enviaCursos.js";
 const moduloInicio = document.querySelector(".modulo-inicio");
 const moduloConceitosBasicos = document.querySelector(".modulo-conceitos");
 const moduloOpcional = document.querySelector(".modulo-opcional");
-const baseUrl = "https://squad22-hackathon.herokuapp.com";
+const baseUrl = "http://localhost:4000";
 
 window.addEventListener("DOMContentLoaded", async () => {
   const dados = await pesquisaConteudos();
@@ -38,8 +38,8 @@ window.addEventListener("DOMContentLoaded", async () => {
       if (verificaCurso != "existente") {
         cursosIniciados.push(conteudo.dataset.id);
         console.log(cursosIniciados);
-/*         const dadosEnviados = await enviaCursos(`${baseUrl}/users/${userId}`, cursosIniciados);
-        console.log(dadosEnviados); */
+        const dadosEnviados = await enviaCursos(`${baseUrl}/users/${userId}`, cursosIniciados);
+        console.log(dadosEnviados);
       }
     });
   }

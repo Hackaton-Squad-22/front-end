@@ -6,7 +6,7 @@ const enviaCursos = async (url, cursosFullstacks = [], cursoQa = [], cursoUx = [
         "Content-Type": "application/json;charset=UTF-8",
       },
       body: JSON.stringify({
-        cursosFulltacks: cursosFullstacks,
+        cursosFullstacks: cursosFullstacks,
         cursosQa: cursoQa,
         cursosUx: cursoUx,
       }),
