@@ -1,16 +1,12 @@
 const quebraLinhas = document.querySelectorAll(".br")
-const secaoMedia = document.querySelector(".secao-media-home")
+const btnVoltaAoTopo = document.querySelector(".btn-up-top")
+
+console.log(window.screen.width);
 
 window.addEventListener("DOMContentLoaded", () => {
-  if (window.innerWidth <= 744 && window.innerWidth > 430) {
+  if (window.screen.width <= 744 && window.screen.width > 430) {
     for (let linha of quebraLinhas) {
       linha.classList.toggle("table-txt")
     }
   }
-
-/*   console.log(secaoMedia);
-  console.log(window.innerWidth);
-  if ( window.innerWidth <= 430 ) {
-    secaoMedia.classList.add("text-center")
-  } */
 })
