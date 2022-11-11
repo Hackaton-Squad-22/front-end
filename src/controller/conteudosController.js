@@ -14,7 +14,7 @@ window.addEventListener("DOMContentLoaded", async () => {
   const cursosIniciados = response[1] || [];
   const userId = response[0];
 
-  //Display dos conteudos na página
+  //Display Gdos conteudos na página
   for (let curso of dados) {
     if (curso.modulo == "inicio") {
       moduloInicio.innerHTML += conteudo(curso);

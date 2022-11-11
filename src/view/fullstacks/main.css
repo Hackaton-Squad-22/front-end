@@ -1,9 +1,28 @@
+@import url(/src/view/css/global.css);
+
 * {
   margin: 0;
 }
 
+section {
+  margin: auto;
+  width: 100%;
+  height: 80px;
+  border-top: 1px solid #000;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+}
+
+section img {
+  margin-left: 48px;
+}
+
 section h6 {
-  margin-left: 2rem;
+  font-size: 22px;
+  line-height: 32px;
+  font-family: var(--fonteFamilyTexto);
+  margin-left: 24px;
 }
 
 section ul {
@@ -17,19 +36,20 @@ section ul li {
   font-size: 0.9rem;
 }
 
-section {
-  margin: auto;
-  width: 100%;
-  outline: 1px solid rgb(219, 219, 219);
-  padding: 4px;
-}
-
-.modulo-inicio {
+.modulo-inicio,
+.modulo-conceitos,
+.modulo-opcional {
   padding: 0 !important;
 }
 
 section:hover {
   background-color: rgba(206, 206, 206, 0.205);
+}
+
+.accordion-button {
+  height: 80px !important;
+  font-size: var(--fonteTitulo4) !important;
+  padding-left: 24px !important;
 }
 
 .finished {
@@ -45,10 +65,15 @@ section:hover {
   margin-bottom: 16px;
   border-radius: 0 !important;
   border: none !important;
-  outline: 1px solid rgba(206, 206, 206, 0.801);
+  outline: 1px solid #000;
 }
 
-.accordion-button {
-  background-color: #E3F2FD !important;
-  height: 80px !important;
+.primeiro-accordion {
+  background-color: #e3f2fd !important;
+}
+.segundo-accordion {
+  background-color: #d6edff !important;
+}
+.terceiro-accordion {
+  background-color: #90caf9 !important;
 }
