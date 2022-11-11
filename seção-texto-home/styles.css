@@ -46,6 +46,7 @@ a {
   font-family: var(--fonteFamilyTitulo);
   width: 72%;
   margin: auto;
+  text-align: center;
 }
 
 .secao-media-home {
