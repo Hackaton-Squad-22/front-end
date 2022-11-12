@@ -31,6 +31,7 @@
   flex-basis: 400px;
   flex-direction: column;
   height: 512px;
+  list-style: none;
   padding: 0 0 24px;
 }
 
@@ -97,6 +98,7 @@
   box-sizing: border-box;
   font-family: var(--fonteFamilyTexto);
   font-size: 15px;
+  line-height: 24px;
   margin: 0;
 }
 
@@ -119,6 +121,7 @@
   font-weight: 600;
   height: 40px;
   justify-content: center;
+  text-decoration: none;
   width: 91px;
 }
 
