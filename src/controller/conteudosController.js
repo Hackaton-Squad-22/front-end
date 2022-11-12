@@ -1,45 +1,52 @@
 import pesquisaConteudos from "../service/conteudos/pesquisaConteudos.js";
-import conteudo from "../service/conteudos/conteudo.js";
 import pesquisaCursosIniciados from "../service/cursos/pesquisaCursosIniciados.js";
 import enviaCursos from "../service/cursos/enviaCursos.js";
+import displayConteudos from "../service/conteudos/displayConteudos.js";
 
-const moduloInicio = document.querySelector(".modulo-inicio");
-const moduloConceitosBasicos = document.querySelector(".modulo-conceitos");
-const moduloOpcional = document.querySelector(".modulo-opcional");
 const baseUrl = "https://squad22-hackathon.herokuapp.com";
 
 window.addEventListener("DOMContentLoaded", async () => {
   const dados = await pesquisaConteudos();
   const response = await pesquisaCursosIniciados(`${baseUrl}/users`);
-  const cursosIniciados = response[1] || [];
+  // Salva as informações do usuário, referente ao seu ID(para requisição futura) e dos cursos iniciados em cada trilha
   const userId = response[0];
+  const cursosFsIniciados = response[1] || [];
+  const cursosQaIniciados = response[2] || [];
+  const cursosUxIniciados = response[3] || [];
 
   //Display Gdos conteudos na página
-  for (let curso of dados) {
-    if (curso.modulo == "inicio") {
-      moduloInicio.innerHTML += conteudo(curso, cursosIniciados);
-    } else if (curso.modulo == "conceitos-basicos") {
-      moduloConceitosBasicos.innerHTML += conteudo(curso, cursosIniciados);
-    } else if (curso.modulo == "opcional") {
-      moduloOpcional.innerHTML += conteudo(curso, cursosIniciados);
-    }
-  }
+  displayConteudos(dados, cursosFsIniciados, cursosQaIniciados, cursosUxIniciados)
 
   // Controle de conteúdos clicados pelo usuário para cadastro no seu banco
   const conteudos = document.querySelectorAll(".conteudo");
   for (let conteudo of conteudos) {
+    // Ao clique do usuário, verifica primeiro se ele já foi interagido
     conteudo.addEventListener("click", async () => {
       let verificaCurso = "";
-      for (let cursoId of cursosIniciados) {
+      for (let cursoId of cursosFsIniciados) {
         if (conteudo.dataset.id === cursoId) {
           verificaCurso = "existente";
           return;
         }
       }
+      // Se não for interagido, adiciona ele aos conteúdos interagiso
       if (verificaCurso != "existente") {
-        cursosIniciados.push(conteudo.dataset.id);
-        await enviaCursos(`${baseUrl}/users/${userId}`, cursosIniciados);
-      }
+        if (conteudo.dataset.trilha === "Full Stacks") {
+          cursosFsIniciados.push(conteudo.dataset.id);
+        } else if (conteudo.dataset.trilha === "QA") {
+          cursosQaIniciados.push(conteudo.dataset.id)
+        } else if (conteudo.dataset.trilha === "UX") {
+          cursosUxIniciados.push(conteudo.dataset.id)
+        }
+        // Envia para o back-end o novo array de cursos interagidos pelo usuário
+        await enviaCursos(
+          `${baseUrl}/users/${userId}`,
+          cursosFsIniciados,
+          cursosQaIniciados,
+          cursosUxIniciados
+        );
+/*         displayConteudos(dados, cursosFsIniciados, cursosQaIniciados, cursosUxIniciados)
+ */      }
     });
   }
 });

@@ -1,5 +1,5 @@
 const conteudoFinalizado = (cursosIniciados, cursoId) => {
-  let iniciado = "";
+  let iniciado = "not-finished-icon.svg";
   for (let curso of cursosIniciados) {
     if (curso === cursoId) {
       iniciado = "finished-icon.svg";
