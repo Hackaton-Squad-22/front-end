@@ -7,60 +7,69 @@
   <title>Document</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../../global.css">
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="global.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <section class="escolha-trilha-secao">
-    <h2 class="secao-titulo-trilha">Escolha sua trilha</h2>
-
-    <section class="cards-trilha-secao">
-      <div class="card card-trilha">
-        <img src="src/images/FS-grande_cor_tam1.png" class="card-img-top card-imagem-trilha" alt="...">
-        <div class="card-body card-text-info-wrapper">
-          <h5 class="card-titulo-trilha">Full Stack Developer</h5>
-          <p class="card-info-text-trilha">Duração total: 50h | Nível: Iniciante</p>
-          <div class="barra-progresso-wrapper">
-            <span class="barra-progresso" data-progresso="barra"></span>
-            <p class="progresso-numero" data-progresso="numero">25%</p>
+  <main>
+    <section class="escolha-trilha-secao"  data-secao="trilhas-home">
+      <h2 class="secao-titulo-trilha">Escolha sua trilha:</h2>
+      <section class="cards-trilha-secao" data-secao="cards-home">
+        <div class="card card-trilha">
+          <img src="src/images/FS-grande_cor_tam1.png" class="card-img-top card-imagem-trilha" alt="...">
+          <div class="card-body card-texto-info-wrapper">
+            <h5 class="card-titulo-trilha">Desenvolvedor Full Stack</h5>
+            <p class="card-info-texto-trilha">Duração total: 50h | Nível: Iniciante</p>
+            <div class="barra-progresso-wrapper">
+              <span class="barra-progresso" data-progresso="barra"></span>
+              <p class="progresso-numero" data-progresso="numero">25%</p>
+            </div>
+            <p class="card-text card-texto-trilha">Um Desenvolvedor Full Stack utiliza linguagens modernas para solucionar problemas em diversas áreas do mercado e está sempre pronto para encarar desafios que agregam em seu conhecimento profissional.</p>
           </div>
-          <p class="card-text card-texto-trilha">Um Desenvolvedor Full Stack usa linguagens modernas para solucionar problemas e está sempre pronto para encarar desafios.</p>
-          <a href="#" class="btn card-botao">Acessar</a>
-        </div>
-      </div>
-
-      <div class="card card-trilha">
-        <img src="src/images/UX-cor_tam.png" class="card-img-top card-imagem-trilha" alt="...">
-        <div class="card-body card-text-info-wrapper">
-          <h5 class="card-title card-titulo-trilha">UX/UI Designer</h5>
-          <p class="card-info-text-trilha">Duração total: 30h | Nível: Iniciante</p>
-          <div class="barra-progresso-wrapper">
-            <span class="barra-progresso" data-progresso="barra"></span>
-            <p class="progresso-numero" data-progresso="numero">0%</p>
+          <div class="card-botao-wrapper">
+            <a href="#" class="btn card-botao">Acessar</a>
           </div>
-          <p class="card-text card-texto-trilha">Um UX Designer é responsável por garantir o equilíbrio entre o design projetado e por atender a satisfação do cliente com o seu produto ou marca.</p>
-          <a href="#" class="btn card-botao">Acessar</a>
         </div>
-      </div>
-
-      <div class="card card-trilha">
-        <img src="src/images/QA_cor_tam.png" class="card-img-top card-imagem-trilha" alt="...">
-        <div class="card-body card-text-info-wrapper">
-          <h5 class="card-title card-titulo-trilha">Quality Assurance</h5>
-          <p class="card-info-text-trilha">Duração total: 180h | Nível: Iniciante</p>
-          <div class="barra-progresso-wrapper">
-            <span class="barra-progresso" data-progresso="barra"></span>
-            <p class="progresso-numero" data-progresso="numero">0%</p>
+  
+        <div class="card card-trilha">
+          <img src="src/images/UX-cor_tam.png" class="card-img-top card-imagem-trilha" alt="...">
+          <div class="card-body card-texto-info-wrapper">
+            <h5 class="card-title card-titulo-trilha">UX/UI Designer</h5>
+            <p class="card-info-texto-trilha">Duração total: 30h | Nível: Iniciante</p>
+            <div class="barra-progresso-wrapper">
+              <span class="barra-progresso" data-progresso="barra"></span>
+              <p class="progresso-numero" data-progresso="numero">0%</p>
+            </div>
+            <p class="card-text card-texto-trilha">Um Desenvolvedor Full Stack utiliza linguagens modernas para solucionar problemas em diversas áreas do mercado e está sempre pronto para encarar desafios que agregam em seu conhecimento profissional.</p>
           </div>
-          <p class="card-text card-texto-trilha">Um profissional ou uma equipe  de Quality Assurance tem a  função de garantir a qualidade no desenvolvimento de um produto ou serviço.</p>
-          <a href="#" class="btn card-botao">Acessar</a>
+          <div class="card-botao-wrapper">
+            <a href="#" class="btn card-botao">Acessar</a>
+          </div>
         </div>
-      </div>
+  
+        <div class="card card-trilha">
+          <img src="src/images/QA_cor_tam.png" class="card-img-top card-imagem-trilha" alt="...">
+          <div class="card-body card-texto-info-wrapper">
+            <h5 class="card-title card-titulo-trilha">Quality Assurance</h5>
+            <p class="card-info-texto-trilha">Duração total: 180h | Nível: Iniciante</p>
+            <div class="barra-progresso-wrapper">
+              <span class="barra-progresso" data-progresso="barra"></span>
+              <p class="progresso-numero" data-progresso="numero">0%</p>
+            </div>
+            <p class="card-text card-texto-trilha">Um profissional ou uma equipe  de Quality Assurance tem a  função de garantir a qualidade no desenvolvimento de um produto ou serviço.</p>
+          </div>
+          <div class="card-botao-wrapper">
+            <a href="#" class="btn card-botao">Acessar</a>
+          </div>
+        </div>
+  
+      </section>
 
     </section>
-  </section>
 
+  </main>
+  <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>

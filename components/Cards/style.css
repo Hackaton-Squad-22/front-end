@@ -1,21 +1,23 @@
 .escolha-trilha-secao{
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  margin: 0 70px;
+  gap: 46px;
+  padding: 0 70px;
+  margin: 41px auto 80px;
   max-width: 1440px;
 }
 
 .secao-titulo-trilha{
-  box-sizing: border-box;
   font-family: var(--fonteFamilyTitulo);
   font-size: var(--fonteTitulo4);
-  margin-bottom: 46px;
 }
 
 .cards-trilha-secao{
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 50px;
+  flex-wrap: wrap;
 }
 
 .card-trilha{
@@ -23,32 +25,39 @@
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   box-shadow: 0 4px 4px rgb(0, 0, 0, 0.25);
-  min-height: 512px;
-  width: 400px;
+  box-sizing: border-box;
+  display: flex;
+  flex-basis: 400px;
+  flex-direction: column;
+  height: 512px;
+  padding: 0 0 24px;
 }
 
 .card-imagem-trilha{
-  height: 200px;
+  flex-basis: 200px;
+  flex-grow: 0;
+  overflow: hidden;
   width: 100%;
 }
 
-.card-text-info-wrapper{
+.card-texto-info-wrapper{
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
   gap: 8px;
-  padding: 27px 24px 24px;
+  padding: 27px 24px 0;
 }
 
 .card-titulo-trilha{
   box-sizing: border-box;
   font-family: var(--fonteFamilyTitulo);
   font-size: 32px;
+  line-height: 32px;
   margin: 0;
-
 }
 
-.card-info-text-trilha{
+.card-info-texto-trilha{
   box-sizing: border-box;
   font-family: var(--fonteFamilyTexto);
   font-size: 12px;
@@ -57,9 +66,8 @@
 
 .barra-progresso-wrapper{
   background-color: #BDBAE9;
-  border-radius: 1px;
   box-sizing: border-box;
-  height: 12px;
+  flex-basis: 12px;
   overflow: hidden;
   position: relative;
   width: 236px;
@@ -70,7 +78,6 @@
   height: inherit;
   position: absolute;
   width: inherit;
-  transform: translate(25%);
 }
 
 .progresso-numero{
@@ -80,7 +87,6 @@
   font-weight: 600;
   line-height: 12px;
   margin: 0;
-  right: 50%;
   transform: translateX(22px);
 }
 
@@ -89,47 +95,47 @@
   font-family: var(--fonteFamilyTexto);
   font-size: 15px;
   margin: 0;
-  min-height: 112px;
+}
+
+.card-botao-wrapper{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 24px;
 }
 
 .card-botao{
   align-items: center;
   align-self: flex-end;
   background-color: var(--verde);
-  border-radius: 100px;
-  color: #FFFFFF;
+  border-radius: 90px;
+  color: #49454F;
   display: flex;
   flex-direction: column;
   font-family: var(--fonteFamilyTexto);
   font-size: 15px;
+  font-weight: 600;
   height: 40px;
   justify-content: center;
   width: 91px;
 }
 
-@media (max-width: 1208px){
-  .card-titulo-trilha{
-    min-height: 80px;
+@media (max-width: 744px){
+  .escolha-trilha-secao{
+    margin: 58px auto 104px;
+    padding: 0 64px;
   }
-  .barra-progresso-wrapper{
-    width: 100%;
+
+  .secao-titulo-trilha{
+    font-size: var(--fonteTitulo5);
+  }
+
+  .cards-trilha-secao{
+    justify-content: center;
+  }
+
+  .cards-trilha-secao{
+    gap: 56px;
   }
 }
 
-@media (max-width: 1024px){
-  .card-texto-trilha{
-    min-height: 200px;
-  }
-}
 
-@media (max-width: 920px){
-  .card-info-text-trilha{
-    min-height: 36px;
-  }
-}
-
-@media (max-width: 812px){
-  .card-titulo-trilha{
-    font-size: 28px;
-  }
-}

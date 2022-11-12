@@ -1,0 +1,29 @@
+:root {
+  --verdeClaro: #C3FFCC;
+  --verde: #5AE498;
+  --roxoClaro: #BF84F8;
+  --roxo: #D6D3FE;
+  --roxoDiscord: #8054F0;
+  --azulAcinzentadoEscuro: #373753;
+  --azulAcinzentadoMedio: #62617F;
+  --azulAcinzentadoClaro: #908EAE;
+  --laranjaEscuro: #FD733C;
+  --laranjaMedio: #FFA469;
+  --laranjaClaro: #FFD698;
+  --amareloEscuro: #C9C02C;
+  --amareloEscuro: #FFF261;
+  --amareloEscuro: #FFFF93;
+  --fonteParagrafoGrande: 22.13px;
+  --fonteParagrafoRegular: 19.44px;
+  --fonteParagrafoPequena: 16px;
+  --fonteParagrafoMuitoPequena: 8.93px;
+  --fonteTitulo1: 61.4px;
+  --fonteTitulo2: 48.83px;
+  --fonteTitulo3: 39.06px;
+  --fonteTitulo4: 31.25px;
+  --fonteTitulo5: 25px;
+  --fonteTitulo6: 20px;
+  --fonteTitulo7: 16px;
+  --fonteFamilyTitulo: 'Familjen Grotesk', sans-serif;
+  --fonteFamilyTexto: 'Source Sans Pro', sans-serif;;
+}
