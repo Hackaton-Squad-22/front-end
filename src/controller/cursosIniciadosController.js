@@ -4,7 +4,7 @@ import pesquisaCursosIniciados from "../service/cursos/pesquisaCursosIniciados.j
 
 const conteudos = document.querySelectorAll(".conteudo");
 const response = pesquisaCursosIniciados(
-  "https://squad22-hackathon.herokuapp.com//users"
+  "https://squad22-hackathon.herokuapp.com/users"
 );
 const cursosIniciados = response[1] || [];
 const userId = response[0];
@@ -13,6 +13,6 @@ for (let conteudo of conteudos) {
   conteudo.addEventListener("click", () => {
     const cursosId = adicionaCurso(cursosIniciados);
 
-    enviaCursos(`http://localhost:4000/users/${userId}`, cursosId);
+    enviaCursos(`https://squad22-hackathon.herokuapp.com//users/${userId}`, cursosId);
   });
 }

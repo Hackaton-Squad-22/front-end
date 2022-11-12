@@ -6,7 +6,7 @@ import enviaCursos from "../service/cursos/enviaCursos.js";
 const moduloInicio = document.querySelector(".modulo-inicio");
 const moduloConceitosBasicos = document.querySelector(".modulo-conceitos");
 const moduloOpcional = document.querySelector(".modulo-opcional");
-const baseUrl = "http://localhost:4000";
+const baseUrl = "https://squad22-hackathon.herokuapp.com";
 
 window.addEventListener("DOMContentLoaded", async () => {
   const dados = await pesquisaConteudos();
@@ -17,13 +17,14 @@ window.addEventListener("DOMContentLoaded", async () => {
   //Display Gdos conteudos na página
   for (let curso of dados) {
     if (curso.modulo == "inicio") {
-      moduloInicio.innerHTML += conteudo(curso);
+      moduloInicio.innerHTML += conteudo(curso, cursosIniciados);
     } else if (curso.modulo == "conceitos-basicos") {
-      moduloConceitosBasicos.innerHTML += conteudo(curso);
+      moduloConceitosBasicos.innerHTML += conteudo(curso, cursosIniciados);
     } else if (curso.modulo == "opcional") {
-      moduloOpcional.innerHTML += conteudo(curso);
+      moduloOpcional.innerHTML += conteudo(curso, cursosIniciados);
     }
   }
+
   // Controle de conteúdos clicados pelo usuário para cadastro no seu banco
   const conteudos = document.querySelectorAll(".conteudo");
   for (let conteudo of conteudos) {
@@ -37,9 +38,7 @@ window.addEventListener("DOMContentLoaded", async () => {
       }
       if (verificaCurso != "existente") {
         cursosIniciados.push(conteudo.dataset.id);
-        console.log(cursosIniciados);
-        const dadosEnviados = await enviaCursos(`${baseUrl}/users/${userId}`, cursosIniciados);
-        console.log(dadosEnviados);
+        await enviaCursos(`${baseUrl}/users/${userId}`, cursosIniciados);
       }
     });
   }
