@@ -69,6 +69,10 @@ a:hover {
   outline: 1px solid #000;
 }
 
+.status {
+  margin-left: 32px;
+}
+
 .primeiro-accordion-fs {
   background-color: #e3f2fd !important;
 }
@@ -77,4 +81,50 @@ a:hover {
 }
 .terceiro-accordion-fs {
   background-color: #90caf9 !important;
+}
+
+/* Transição até o IPad */
+@media (max-width: 1439px) {
+
+}
+
+@media (max-width: 1120px) {
+  a {
+    padding: 24px 32px 16px 16px;
+  }
+
+  a h6 {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  a ul li {
+     font-size: 10px;
+     line-height: 16px;
+   }
+
+   .accordion {
+    margin: 72px 110px 0 109px;
+  }
+
+  .accordion-button {
+    height: 64px !important;
+    font-size: var(--fonteTitulo5) !important;
+    padding: 0 32px 0 24px !important;
+  }
+
+  .status {
+    transform: scale(0.8);
+  }
+}
+
+@media (max-width: 680px) {
+  .accordion {
+    margin: 72px 35px 0 35px;
+  }
+}
+
+/* Tamanho mobile */
+@media (max-width: 470px) {
+
 }
