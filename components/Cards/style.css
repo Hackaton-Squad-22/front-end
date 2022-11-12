@@ -138,10 +138,15 @@
   }
 }
 
+@media (max-width: 540px){
+  .escolha-trilha-secao{
+    padding: 0 24px;
+  }
+}
+
 @media (max-width: 430px){
   .escolha-trilha-secao{
     margin: 44px auto 88px;
-    padding: 0 64px;
   }
 
   .card-trilha{
