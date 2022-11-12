@@ -137,3 +137,62 @@
     gap: 56px;
   }
 }
+
+@media (max-width: 430px){
+  .escolha-trilha-secao{
+    margin: 44px auto 88px;
+    padding: 0 64px;
+  }
+
+  .card-trilha{
+    flex-basis: 296px;
+    height: 384px;
+    padding: 0 0 16px;
+  }
+
+  .card-imagem-trilha{
+    flex-basis: 152px;
+  }
+
+  .card-texto-info-wrapper{
+    flex-grow: 1;
+    gap: 6px;
+    padding: 18px 16px 0;
+  }
+
+  .card-titulo-trilha{
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .card-info-texto-trilha{
+    font-size: 9px;
+    margin-bottom: 6px;
+  }
+  
+  .barra-progresso-wrapper{
+    flex-basis: 9px;
+    margin-bottom: 6px;
+    width: 177px;
+  }
+
+  .progresso-numero{
+    line-height: 9px;
+    transform: translateX(13px);
+  }
+
+  .card-texto-trilha{
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .card-botao-wrapper{
+    margin-right: 16px;
+  }
+  
+  .card-botao{
+    font-size: 11px;
+    height: 24px;
+    width: 68px;
+  }
+}
