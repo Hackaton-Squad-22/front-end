@@ -101,6 +101,7 @@ a {
 .secao-final-home p {
   width: 532px;
   margin-bottom: 80px;
+  text-align: center;
 }
 
 .discord-container {
@@ -132,6 +133,7 @@ a {
   font-size: var(--fonteTitulo6);
   font-family: var(--fonteFamilyTexto);
   line-height: 24px;
+  text-align: center;
 }
 
 .discord-btn {
