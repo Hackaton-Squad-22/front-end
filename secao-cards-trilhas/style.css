@@ -66,7 +66,7 @@
 }
 
 .barra-progresso-wrapper{
-  background-color: #BDBAE9;
+  background-color: #EAEAEA;
   box-sizing: border-box;
   flex-basis: 12px;
   overflow: hidden;
@@ -75,10 +75,12 @@
 }
 
 .barra-progresso{
-  background-color: #EAEAEA;
+  background-color: #BDBAE9;
   height: inherit;
   position: absolute;
-  width: inherit;
+  height: 12px;
+  transform: translateX(-80%);
+  width: 100%;
 }
 
 .progresso-numero{
