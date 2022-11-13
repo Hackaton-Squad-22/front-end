@@ -1,4 +1,37 @@
-@import url(../global.css);
+@import url(../../view/css/global.css);
+
+.secao-titulo-hackathons{
+  align-items: center;
+  background-color: #FFFFFF;
+  box-sizing: border-box;
+  display: flex;
+  height: 504px;
+  justify-content: center;
+  text-align: center;
+  padding: 0 36px;
+}
+
+.container-titulo{  
+  align-items: center;
+  box-sizing: border-box;
+  flex-direction: column;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  width: 880px;
+}
+
+.container-titulo h2{
+  font-family: var(--fonteFamilyTitulo);
+  font-size: 62px;
+  margin: 0;
+}
+
+.container-titulo p{
+  font-family: var(--fonteFamilyTexto);
+  font-size: 20px;
+  margin: 0;
+}
 
 .secao-hackathons{
   background: url(images/bg-desafios-passados.png);
@@ -151,6 +184,14 @@
 }
 
 @media (max-width: 744px){
+  .secao-titulo-hackathons{
+    height: 440px;
+  }
+  
+  .container-titulo h2{
+    font-size: 38px;
+  }
+
   .secao-hackathons{
     background-position: center;
     padding: 88px 0 72px;  
@@ -218,6 +259,16 @@
     background-color: #FFFFFF;
     border: 2px solid #49454F;
     box-sizing: border-box;
+  }
+}
+
+@media (max-width: 430px){
+  .secao-titulo-hackathons{
+    height: 432px;
+  }
+  
+  .container-titulo p{
+    font-size: 14px;
   }
 }
 
