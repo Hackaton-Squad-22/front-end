@@ -2,17 +2,18 @@
 
 .secao-titulo-trilha{
   background: url(images/fs-fundo.png);
+  background-size: cover;
+  box-sizing: border-box;
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(12, 1fr);
-  height: 736px;
   margin: 0 auto;
   max-width: 1440px;
   padding: 0 70px;
-
 }
 
 .container-central{
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   grid-column-start: 3;
@@ -21,12 +22,14 @@
 }
 
 .titulo-trilha{
+  box-sizing: border-box;
   font-family: var(--fonteFamilyTitulo);
   font-size: 62px;
   margin-bottom: 24px;
 }
 
 .card-info-texto-trilha{
+  box-sizing: border-box;
   font-family: var(--fonteFamilyTexto);
   font-size: 20px;
   margin-bottom: 40px;
@@ -52,6 +55,7 @@
 }
 
 .progresso-numero{
+  box-sizing: border-box;
   color: #FFFFFF;
   font-family: var(--fonteFamilyTexto);
   font-size: 12px;
@@ -62,20 +66,24 @@
 }
 
 .descricao-trilha{
+  box-sizing: border-box;
   font-family: var(--fonteFamilyTexto);
   font-size: 22px;
   margin-bottom: 56px;
 }
 
 .lista-tipo-conteudo{
+  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 56px;
   padding: 0;
 }
 
 .lista-tipo-conteudo li{
   align-items: center;
   border-left: 1px solid #000000;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   font-family: var(--fonteFamilyTexto);
@@ -83,12 +91,12 @@
   gap: 8px;
   line-height: 24px;
   list-style: none;
-  padding: 0 40px;
+  transform: translateX(-20%);
+  flex-basis: 160px;
 }
 
 .lista-tipo-conteudo li:first-child{
   border: none;
-  padding-left: 0;
 }
 
 .lista-tipo-conteudo li span{
@@ -98,6 +106,7 @@
 }
 
 .lista-tipo-conteudo li p{
+  font-size: 20px;
   margin: 0;
 }
 
@@ -119,4 +128,118 @@
 
 .icone-livros{
   content: url(images/livros.png);
+}
+
+@media (max-width: 1024px){
+  .secao-titulo-trilha{
+    padding: 0 48px;
+  }
+
+  .container-central{
+    grid-column-start: 2;
+    grid-column-end: 12;
+  }
+}
+
+@media (max-width: 744px){
+  .secao-titulo-trilha{
+    gap: 20px;
+    grid-template-columns: repeat(8, 1fr);
+    margin: 0 auto;
+    max-width: 1440px;
+    padding: 0 70px;
+  
+  }
+
+  .container-central{
+    grid-column-start: 1;
+    grid-column-end: 9;
+  }
+
+  .titulo-trilha{
+    margin-bottom: 16px;
+  }
+
+  .card-info-texto-trilha{
+    margin-bottom: 36px;
+  }
+
+  .descricao-trilha{
+    font-size: 18px;
+    margin-bottom: 72px;
+  }
+
+  .lista-tipo-conteudo{
+    margin-bottom: 46px;
+  }
+
+  .lista-tipo-conteudo li span{
+    height: 20px;
+    width: 20px;
+  }
+
+  .lista-tipo-conteudo li p{
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 558px){
+  .secao-titulo-trilha{
+    padding: 0 24px;
+  }
+
+  .container-central{
+    grid-column-start: 1;
+    grid-column-end: 10;
+  }
+}
+
+@media (max-width: 430px){
+  .secao-titulo-trilha{
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0 18px;
+  
+  }
+
+  .container-central{
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+
+  .titulo-trilha{
+    font-size: 38px;
+    margin-bottom: 20px;
+  }
+
+  .card-info-texto-trilha{
+    font-size: 16px;
+    margin-bottom: 36px;
+  }
+
+  .barra-progresso-wrapper{
+    flex-basis: 8px;
+    margin-bottom: 70px;
+    width: 174px;
+  }
+
+  .progresso-numero{
+    line-height: 8px;
+  }
+
+  .descricao-trilha{
+    margin-bottom: 64px;
+  }
+
+  .lista-tipo-conteudo{
+    margin-bottom: 48px;
+  }
+
+  .lista-tipo-conteudo li span{
+    height: 18px;
+    width: 18px;
+  }
+
+  .lista-tipo-conteudo li p{
+    font-size: 12px;
+  }
 }
