@@ -1,0 +1,100 @@
+@import url(../../global.css);
+
+.secao-hackathons{
+  background: url(../../images/bg-desafios-passados.png);
+  background-size: cover;
+}
+
+.lista-hackathon{
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+  margin: auto;
+  padding: 64px 0 80px;
+  width: 1008px;
+}
+
+.card-hackathon{
+  border-radius: 24px;
+  display: flex;
+  flex-basis: 264px;
+  list-style: none;
+}
+
+.imagem-hackathon{
+  flex-basis: 424px;
+}
+
+.wrapper-info-hackathon{
+  background-color: #FFFFFF;
+  border-bottom-right-radius: 24px;
+  border-top-right-radius: 24px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 36px 24px 24px 48px;
+
+}
+
+.wrapper-info-hackathon h3{
+  box-sizing: border-box;
+  font-family: var(--fonteFamilyTitulo);
+  font-size: 32px;
+  line-height: 32px;
+  margin: 0 0 8px;
+}
+
+.wrapper-info-hackathon p{
+  box-sizing: border-box;
+  font-family: var(--fonteFamilyTexto);
+  font-size: 16px;
+  line-height: 16px;
+  margin: 0;
+}
+
+.wrapper-titulo-hackathon{
+  flex-basis: 56px;
+  flex-shrink: 0;
+}
+
+.wrapper-titulo-hackathon p{
+  color: #49454F;
+}
+
+.descricao-hackathon{
+  flex-grow: 1;
+}
+
+.wrapper-botao{
+  box-sizing: border-box;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: flex-end;
+  gap: 24px;
+}
+
+.botao{
+  align-items: center;
+  color: #49454F;
+  border-radius: 100px;
+  display: flex;
+  flex-basis: 144px;
+  font-family: var(--fonteFamilyTexto);
+  font-weight: 600;
+  height: 40px;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.botao-primario{
+  background-color: #91FFC9;
+}
+
+.botao-contorno{
+  background-color: #FFFFFF;
+  border: 2px solid #49454F;
+  box-sizing: border-box;
+}
