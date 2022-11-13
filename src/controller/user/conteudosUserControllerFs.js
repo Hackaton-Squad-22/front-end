@@ -1,7 +1,7 @@
-import pesquisaConteudos from "../service/conteudosUser/pesquisaConteudos.js";
-import pesquisaCursosIniciados from "../service/cursos/pesquisaCursosIniciados.js";
-import enviaCursos from "../service/cursos/enviaCursos.js";
-import displayConteudosUser from "../service/conteudosUser/displayConteudosUser.js";
+import pesquisaConteudos from "../../service/conteudosUser/pesquisaConteudos.js";
+import pesquisaCursosIniciados from "../../service/cursos/pesquisaCursosIniciados.js";
+import enviaCursos from "../../service/cursos/enviaCursos.js";
+import displayConteudosUser from "../../service/conteudosUser/displayConteudosUser.js";
 
 const baseUrl = "https://squad22-hackathon.herokuapp.com";
 
@@ -17,9 +17,7 @@ window.addEventListener("DOMContentLoaded", async () => {
   //Display Gdos conteudos na página
   displayConteudosUser(
     dados,
-    cursosFsIniciados,
-    cursosQaIniciados,
-    cursosUxIniciados
+    cursosFsIniciados
   );
 
   // Controle de conteúdos clicados pelo usuário para cadastro no seu banco
@@ -50,8 +48,7 @@ window.addEventListener("DOMContentLoaded", async () => {
           cursosQaIniciados,
           cursosUxIniciados
         );
-        /*         displayConteudos(dados, cursosFsIniciados, cursosQaIniciados, cursosUxIniciados)
-         */
+
       }
     });
   }
