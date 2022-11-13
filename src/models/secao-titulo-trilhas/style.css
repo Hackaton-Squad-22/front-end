@@ -1,4 +1,4 @@
-@import url(../global.css);
+@import url(/src/view/css/global.css);
 
 .secao-titulo-trilha{
   background: url(images/fs-fundo.png);

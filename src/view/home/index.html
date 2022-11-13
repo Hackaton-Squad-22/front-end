@@ -5,10 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Orange Evolution</title>
-  <link rel="stylesheet" href="/secao-header/style.css">
-  <link rel="stylesheet" href="/secao-texto-home/styles.css">
-  <link rel="stylesheet" href="secao-cards-trilhas/style.css">
-  <link rel="stylesheet" href="/secao-footer/style.css">
+  <link rel="stylesheet" href="/src/models/secao-header/style.css">
+  <link rel="stylesheet" href="/src/models/secao-texto-home/styles.css">
+  <link rel="stylesheet" href="/src/models/secao-cards-trilhas/style.css">
+  <link rel="stylesheet" href="/src/models/secao-footer/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -18,12 +18,12 @@
 </head>
 <body>
   <header class="header">
-    <a href="#"><img class="logo" src="/images/logo evolution.png" alt="logo da orange evolution" /></a>
+    <a href="#"><img class="logo" src="/src/view/images/logo evolution.png" alt="logo da orange evolution" /></a>
     <nav class="header-navbar">  
         <a class="header-navbar-link" href="">trilhas</a>
         <a class="header-navbar-link" href="">desafios</a>
         <a class="header-navbar-link" href="">
-          <img class="img-discord" src="/images/discord-icon-black.svg" alt="logo do discord"/>
+          <img class="img-discord" src="/src/view/images/discord-icon-black.svg" alt="logo do discord"/>
             junte-se a comunidade
         </a>
     </nav>
@@ -33,7 +33,7 @@
   </header>
   <section class="secao-superior-home text-center">
     <h3>
-      Trilhas de estudo gratuitas <br class="br" />para quem está começando na
+      Trilhas de estudo gratuitas <br class="br desabilitado" />para quem está começando na
       área de tecnologia ou migrando de carreira
     </h3>
   </section>
@@ -43,7 +43,7 @@
     <ul class="cards-trilha-secao" data-secao="cards-home">
       <li class="card-trilha">
         <a href="#" class="card-link">
-          <img src="images/fs-grande-cor-tam1.png" class="card-imagem-trilha" alt="Desenvolvedor Full Stack">
+          <img src="/src/view/images/fs-grande-cor-tam1.png" class="card-imagem-trilha" alt="Desenvolvedor Full Stack">
           <section class="card-texto-info-wrapper">
             <h3 class="card-titulo-trilha">Desenvolvedor Full Stack</h3>
             <p class="card-info-texto-trilha">Duração total: 50h | Nível: Iniciante</p>
@@ -61,7 +61,7 @@
 
       <li class="card-trilha">
         <a href="#" class="card-link">
-          <img src="images/ux-cor-tam.png" class="card-imagem-trilha" alt="User Experience e User Interface Design">
+          <img src="/src/view/images/ux-cor-tam.png" class="card-imagem-trilha" alt="User Experience e User Interface Design">
           <section class="card-texto-info-wrapper">
             <h3 class="card-title card-titulo-trilha">UX/UI Designer</h3>
             <p class="card-info-texto-trilha">Duração total: 30h | Nível: Iniciante</p>
@@ -79,7 +79,7 @@
 
       <li class="card-trilha">
         <a href="#" class="card-link">
-          <img src="images/qa-cor-tam.png" class="card-imagem-trilha" alt="Quality Assurance">
+          <img src="/src/view/images/qa-cor-tam.png" class="card-imagem-trilha" alt="Quality Assurance">
           <section class="card-texto-info-wrapper">
             <h3 class="card-title card-titulo-trilha">Quality Assurance</h3>
             <p class="card-info-texto-trilha">Duração total: 180h | Nível: Iniciante</p>
@@ -100,7 +100,7 @@
   <hr />
   <section class="secao-media-home">
     <h2>
-      Pratique com Desafios<br class="br" />
+      Pratique com Desafios<br class="br desabilitado" />
       dos Hackathons passados
     </h2>
     <p>
@@ -115,36 +115,36 @@
   <hr />
 
   <section class="secao-final-home text-center">
-    <h2>Junte-se a nossa <br class="br" />comunidade no Discord</h2>
+    <h2>Junte-se a nossa <br class="br desabilitado" />comunidade no Discord</h2>
     <p>
       A comunidade da Orange Juice é feita para e por você,<br />
       que está começando ou migrando para a área de tecnologia.
     </p>
     <div class="discord-container">
       <div class="discord-container-section">
-        <img src="/images/duvidas-icon.svg" alt="ícone de duvidas" />
-        <div class="discord-container-texto">
+        <img src="/src/view/images/duvidas-icon.svg" alt="ícone de duvidas" />
+        <div class="discord-container-texto text-center">
           Tire dúvidas<br />
           da trilha
         </div>
       </div>
       <div class="discord-container-section">
-        <img src="/images/conexoes-icon.svg" alt="ícone de conexões" />
-        <div class="discord-container-texto">Faça <br />conexões</div>
+        <img src="/src/view/images/conexoes-icon.svg" alt="ícone de conexões" />
+        <div class="discord-container-texto text-center">Faça <br />conexões</div>
       </div>
       <div class="discord-container-section">
-        <img src="/images/desenvolva-icon.svg" alt="ícone de projetos" />
-        <div class="discord-container-texto">Desenvolva <br />projetos</div>
+        <img src="/src/view/images/desenvolva-icon.svg" alt="ícone de projetos" />
+        <div class="discord-container-texto text-center">Desenvolva <br />projetos</div>
       </div>
     </div>
     <a class="discord-btn" href="#">
-      <img src="/images/discord-icon.svg" alt="Ícone do Discord" />
+      <img src="/src/view/images/discord-icon.svg" alt="Ícone do Discord" />
       <div class="discord-txt">Acesse o Discord</div>
     </a>
 
     <a href="" class="btn-up-top">
       <img
-        src="/images/subir-up-página.svg"
+        src="/src/view/images/subir-up-página.svg"
         alt="Ícone de flecha para voltar ao topo da página"
       />
     </a>
@@ -157,12 +157,12 @@
         <p>&copy; 2022 FCamara Formacao e Consultoria</p>
       </div>
       <div class="nav-footer">
-        <a href="https://www.linkedin.com/company/orangejuicetech/"><img src="/images/linkedin-icon.svg" alt="" srcset=""></a>
-        <a href="https://www.twitch.tv/orangejuice_tech"><img src="/images/twitch-icon.svg" alt="" srcset=""></a>
-        <a href="https://www.youtube.com/c/OrangeJuicefc"><img src="/images/youtube-icon.svg" alt=""></a>       
+        <a href="https://www.linkedin.com/company/orangejuicetech/"><img src="/src/view/images/linkedin-icon.svg" alt="Ícone do LinkedIn"></a>
+        <a href="https://www.twitch.tv/orangejuice_tech"><img src="/src/view/images/twitch-icon.svg" alt="Ícone do Twitter"></a>
+        <a href="https://www.youtube.com/c/OrangeJuicefc"><img src="/src/view/images/youtube-icon.svg" alt="Ícone do YouTube"></a>       
       </div>
     </div>
   </footer>
 </body>
-<script src="/seção-texto-home/main.js"></script>
+<script src="/src/models/secao-texto-home/main.js"></script>
 </html>
