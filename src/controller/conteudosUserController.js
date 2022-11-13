@@ -6,7 +6,7 @@ import displayConteudosUser from "../service/conteudosUser/displayConteudosUser.
 const baseUrl = "https://squad22-hackathon.herokuapp.com";
 
 window.addEventListener("DOMContentLoaded", async () => {
-  const dados = await pesquisaConteudos();
+  const dados = await pesquisaConteudos(`${baseUrl}/fullstacks`);
   const response = await pesquisaCursosIniciados(`${baseUrl}/users`);
   // Salva as informações do usuário, referente ao seu ID(para requisição futura) e dos cursos iniciados em cada trilha
   const userId = response[0];

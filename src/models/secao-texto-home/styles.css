@@ -1,8 +1,8 @@
 @import url(/src/view/css/global.css);
 
 hr {
-  width: 92%;
-  margin: 0 auto;
+  width: 92% !important;
+  margin: 0 auto !important;
 }
 
 h2 {
