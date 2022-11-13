@@ -102,20 +102,46 @@ section:hover {
 
 #modal {
   padding: 1em;
-  max-width: 100ch;
+  min-width: 60ch;
   border: 0;
   box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
   margin: auto;
+  position: relative;
 }
 
 #modal form {
   display: flex;
   flex-direction: column;
-  margin-bottom: 16px;
+  margin: 16px;
+}
+
+#modal form input {
+  padding-left: 8px;
+  margin-bottom: 8px;
 }
 
 #modal::backdrop {
   background: rgba(0, 0, 0, 0.4);
+}
+
+.btn-adicionar {
+  width: 40%;
+  margin: 16px auto 0;
+  border: none;
+  border-radius: 16px;
+  padding: 4px 0;
+  background-color: #8054F0;
+  color: #fff;
+
+}
+
+.fechar-modal {
+  position: absolute;
+  top: 0;
+  right: 4px;
+  border: none;
+  background-color: #fff;
+  font-size: 18px;
 }
 
 /* Transição até o IPad */
