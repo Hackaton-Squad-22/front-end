@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Familjen+Grotesk:400');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Familjen Grotesk', sans-serif;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(180deg, #FFFFFF 25.68%, #F4EFFF 100%);
+
+  width: 100vw;
+  height: 153px;
+}
+
+.container-footer{
+  display: flex;
+  justify-content: space-between;
+  width: 1300px;
+  height: 70px;
+  margin-top: 18px;
+  padding: 5px;
+}
+
+.footer-text {
+  font-size: 20px;
+}
+
+.nav-footer {
+  display: flex;
+  justify-content: space-around;
+  width: 300px;
+}
+
+.nav-footer a {
+  margin-top: 5px;
+}
+
+.btn-up-top{
+  margin-top: 18px;
+}
