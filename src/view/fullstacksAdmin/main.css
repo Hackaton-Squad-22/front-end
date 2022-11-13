@@ -1,6 +1,6 @@
 @import url(/src/view/css/global.css);
 
-* {
+*, body {
   margin: 0;
 }
 
@@ -74,10 +74,6 @@ section:hover {
   outline: 1px solid #000;
 }
 
-.status {
-  margin-left: 32px;
-}
-
 .primeiro-accordion-fs {
   background-color: #e3f2fd !important;
 }
@@ -88,9 +84,20 @@ section:hover {
   background-color: #90caf9 !important;
 }
 
+.edicao-container {
+  display: flex;
+}
+
 .editar-icon, .excluir-icon {
   cursor: pointer;
   margin-left: 24px;
+}
+
+.adiciona-curso {
+  position: absolute;
+  right: 208px;
+  cursor: pointer;
+  margin-top: 8px;
 }
 
 /* Transição até o IPad */

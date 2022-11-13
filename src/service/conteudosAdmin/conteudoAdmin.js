@@ -1,4 +1,3 @@
-import conteudoFinalizado from "../conteudosUser/conteudoFinalizado.js";
 import verificaTipoConteudo from "../conteudosUser/verificaTipoConteudo.js";
 
 const conteudoAdmin = (entrada, cursosIniciados) => {
@@ -7,7 +6,7 @@ const conteudoAdmin = (entrada, cursosIniciados) => {
   <section data-id="${entrada._id}" data-trilha="${
     entrada.trilha
   }" class="conteudo" href="${entrada.url}" target="_black">
-    <div class="conteudo-container">
+    <a class="conteudo-container">
       <img src="/src/view/images/${imagem}" alt="Ícone de ${entrada.tipo}">
       <div class="info-conteudo-container">
         <h6>${entrada.curso}</h6>
@@ -16,11 +15,11 @@ const conteudoAdmin = (entrada, cursosIniciados) => {
           <li li class="autor">| Produzido por: ${entrada.autor}</li>
         </ul>
       </div>
+    </a>
+    <div class="edicao-container" data-nome="Teste Curso">
+      <img src="/src/view/images/edit-icon.svg" class="editar-icon" alt="Ícone de editar conteúdo">
+      <img src="/src/view/images/lixeira-icon.svg" class="excluir-icon" alt="Ícone de remover conteúdo">
     </div>
-    <img src="/src/view/images/${conteudoFinalizado(
-      cursosIniciados,
-      entrada._id
-    )}" class="status" alt="Ícone de status do conteúdo">
   </section>
 `;
   return conteudo;
