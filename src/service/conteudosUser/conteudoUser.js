@@ -12,7 +12,7 @@ const conteudoUser = (entrada, cursosIniciados) => {
       <div class="info-conteudo-container">
         <h6>${entrada.curso}</h6>
         <ul>
-          <li class="duracao">Duração: ${entrada.duracao}</li>
+          <li class="duracao">Duração: ${verificaDuracao(entrada.duracao)}</li>
           <li li class="autor">| Produzido por: ${entrada.autor}</li>
         </ul>
       </div>
@@ -25,5 +25,13 @@ const conteudoUser = (entrada, cursosIniciados) => {
 `;
   return conteudo;
 };
+
+const verificaDuracao = (entrada) => {
+  if (entrada == "" || entrada == "00:00:00") {
+    return "00:00:00"
+  } else {
+    return entrada
+  }
+}
 
 export default conteudoUser;

@@ -3,7 +3,7 @@ body {
   margin: 0;
 }
 
-section {
+.conteudo {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -13,21 +13,21 @@ section {
   padding: 40px 32px 24px 48px;
 }
 
-section h6 {
+.conteudo h6 {
   font-size: 22px;
   line-height: 32px;
   font-family: var(--fonteFamilyTexto);
   margin: 0 0 0 24px;
 }
 
-section ul {
+.conteudo ul {
   display: flex;
   justify-content: flex-start;
   margin: 0;
   padding: 0 0 0 26px;
 }
 
-section ul li {
+.conteudo ul li {
   font-family: var(--fonteFamilyTexto);
   margin-right: 8px;
   list-style: none;
@@ -56,7 +56,7 @@ section ul li {
   padding: 0 !important;
 }
 
-section:hover {
+.conteudo:hover {
   background-color: rgba(206, 206, 206, 0.205);
 }
 
@@ -94,10 +94,12 @@ section:hover {
 }
 
 .adiciona-curso {
-  position: absolute;
+  display: inline-block;
+  margin-left: 80%;
   right: 208px;
   cursor: pointer;
   margin-top: 8px;
+  margin-bottom: 64px;
 }
 
 #modal-adicionar,
@@ -155,16 +157,16 @@ section:hover {
 }
 
 @media (max-width: 1120px) {
-  section {
+  .conteudo {
     padding: 24px 32px 16px 16px;
   }
 
-  section h6 {
+  .conteudo h6 {
     font-size: 14px;
     line-height: 16px;
   }
 
-  section ul li {
+  .conteudo ul li {
     font-size: 10px;
     line-height: 16px;
   }

@@ -4,7 +4,7 @@
   margin: 0;
 }
 
-a {
+.conteudo {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -16,21 +16,21 @@ a {
   padding: 40px 32px 24px 48px;
 }
 
-a h6 {
+.conteudo h6 {
   font-size: 22px;
   line-height: 32px;
   font-family: var(--fonteFamilyTexto);
   margin: 0 0 0 24px;
 }
 
-a ul {
+.conteudo ul {
   display: flex;
   justify-content: flex-start;
   margin: 0;
   padding: 0 0 0 26px;
 }
 
-a ul li {
+.conteudo ul li {
  font-family: var(--fonteFamilyTexto);
   margin-right: 8px;
   list-style: none;
@@ -43,7 +43,7 @@ a ul li {
 }
 
 .accordion {
-  margin: 72px 180px 0 290px;
+  margin: 72px 180px 112px 290px;
 }
 
 .modulo-inicio,
@@ -52,7 +52,7 @@ a ul li {
   padding: 0 !important;
 }
 
-a:hover {
+.conteudo:hover {
   background-color: rgba(206, 206, 206, 0.205);
 }
 
@@ -89,16 +89,16 @@ a:hover {
 }
 
 @media (max-width: 1120px) {
-  a {
+  .conteudo {
     padding: 24px 32px 16px 16px;
   }
 
-  a h6 {
+  .conteudo h6 {
     font-size: 14px;
     line-height: 16px;
   }
 
-  a ul li {
+  .conteudo ul li {
      font-size: 10px;
      line-height: 16px;
    }
