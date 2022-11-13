@@ -18,26 +18,7 @@
           </button>
         </h4>
         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-          <div class="accordion-body modulo-inicio">
-            <section data-id="${entrada._id}" data-trilha="${
-              entrada.trilha
-            }" class="conteudo" href="#" target="_black">
-              <a class="conteudo-container">
-                <img src="/src/view/images/cursos-icon.svg" alt="Ícone de ${entrada.tipo}">
-                <div class="info-conteudo-container">
-                  <h6>Teste Curso</h6>
-                  <ul>
-                    <li class="duracao">Duração: teste</li>
-                    <li li class="autor">| Produzido por: teste</li>
-                  </ul>
-                </div>
-              </a>
-              <div class="edicao-container" data-nome="Teste Curso">
-                <img src="/src/view/images/edit-icon.svg" class="editar-icon" alt="Ícone de editar conteúdo">
-                <img src="/src/view/images/lixeira-icon.svg" class="excluir-icon" alt="Ícone de remover conteúdo">
-              </div>
-            </section>
-          </div>
+          <div class="accordion-body modulo-inicio"></div>
         </div>
       </div>
       <div class="accordion-item">
@@ -61,6 +42,23 @@
         </div>
       </div>
     </div>
+
+    <dialog id="modal">
+      <h2 class="text-center">Adicionar conteúdo</h2>
+      <form>
+        <label for="titulo">Título do conteúdo</label>
+        <input type="text" class="titulo">
+        <label for="titulo">Duração</label>
+        <input type="text" class="duracao">
+        <label for="titulo">Tipo de conteúdo</label>
+        <input type="text" class="tipo">
+        <label for="titulo">URL do conteúdo</label>
+        <input type="text" class="url">
+        <label for="titulo">Modulo do conteúdo</label>
+        <input type="text" class="modulo">
+      </form>
+      <button class="fechar-modal">Fechar</button>   
+    </dialog>
 
     <img src="/src/view/images/adiciona-icon.svg" class="adiciona-curso" alt="Ícone de adicionar cursos">
 

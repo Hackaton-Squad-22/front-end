@@ -1,11 +1,13 @@
 import displayConteudosAdmin from "../service/conteudosAdmin/displayConteudosAdmin.js";
 import pesquisaConteudos from "../service/conteudosUser/pesquisaConteudos.js";
+import editaCurso from "../service/cursos/editaCurso.js";
 import pesquisaCursosIniciados from "../service/cursos/pesquisaCursosIniciados.js";
 import removeCurso from "../service/cursos/removeCurso.js";
 
 const baseUrl = "https://squad22-hackathon.herokuapp.com";
 
 window.addEventListener("DOMContentLoaded", async () => {
+  editaCurso()
   const dados = await pesquisaConteudos();
   const response = await pesquisaCursosIniciados(`${baseUrl}/users`);
   // Salva as informações do usuário, referente ao seu ID(para requisição futura) e dos cursos iniciados em cada trilha

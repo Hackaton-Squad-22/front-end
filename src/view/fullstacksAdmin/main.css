@@ -100,6 +100,24 @@ section:hover {
   margin-top: 8px;
 }
 
+#modal {
+  padding: 1em;
+  max-width: 100ch;
+  border: 0;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
+  margin: auto;
+}
+
+#modal form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+#modal::backdrop {
+  background: rgba(0, 0, 0, 0.4);
+}
+
 /* Transição até o IPad */
 @media (max-width: 1439px) {
 
