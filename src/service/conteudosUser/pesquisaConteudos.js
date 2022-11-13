@@ -1,7 +1,5 @@
-const pesquisaConteudos = async () => {
-  const response = await fetch(
-    "https://squad22-hackathon.herokuapp.com/fullstacks"
-  );
+const pesquisaConteudos = async (url) => {
+  const response = await fetch(url);
   const dados = response.json();
 
   return dados;

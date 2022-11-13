@@ -1,6 +1,7 @@
 @import url(/src/view/css/global.css);
 
-*, body {
+*,
+body {
   margin: 0;
 }
 
@@ -29,7 +30,7 @@ section ul {
 }
 
 section ul li {
- font-family: var(--fonteFamilyTexto);
+  font-family: var(--fonteFamilyTexto);
   margin-right: 8px;
   list-style: none;
   font-size: 14px;
@@ -88,7 +89,8 @@ section:hover {
   display: flex;
 }
 
-.editar-icon, .excluir-icon {
+.editar-icon,
+.excluir-icon {
   cursor: pointer;
   margin-left: 24px;
 }
@@ -100,45 +102,51 @@ section:hover {
   margin-top: 8px;
 }
 
-#modal {
-  padding: 1em;
+#modal-adicionar,
+#modal-editar {
+  padding: 30px;
   min-width: 60ch;
   border: 0;
+  border-radius: 16px;
   box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
   margin: auto;
   position: relative;
 }
 
-#modal form {
+#modal-adicionar form,
+#modal-editar form {
   display: flex;
   flex-direction: column;
   margin: 16px;
 }
 
-#modal form input {
+#modal-adicionar form input,
+#modal-editar form input {
   padding-left: 8px;
   margin-bottom: 8px;
 }
 
-#modal::backdrop {
+#modal-adicionar::backdrop,
+#modal-editar::backdrop {
   background: rgba(0, 0, 0, 0.4);
 }
 
-.btn-adicionar {
+.btn-adicionar,
+.btn-editar {
   width: 40%;
   margin: 16px auto 0;
   border: none;
   border-radius: 16px;
   padding: 4px 0;
-  background-color: #8054F0;
+  background-color: #8054f0;
   color: #fff;
-
 }
 
-.fechar-modal {
+.add-fechar-modal,
+.edit-fechar-modal {
   position: absolute;
-  top: 0;
-  right: 4px;
+  top: 4px;
+  right: 8px;
   border: none;
   background-color: #fff;
   font-size: 18px;
@@ -146,7 +154,6 @@ section:hover {
 
 /* Transição até o IPad */
 @media (max-width: 1439px) {
-
 }
 
 @media (max-width: 1120px) {
@@ -160,11 +167,11 @@ section:hover {
   }
 
   section ul li {
-     font-size: 10px;
-     line-height: 16px;
-   }
+    font-size: 10px;
+    line-height: 16px;
+  }
 
-   .accordion {
+  .accordion {
     margin: 72px 110px 0 109px;
   }
 
@@ -187,5 +194,4 @@ section:hover {
 
 /* Tamanho mobile */
 @media (max-width: 470px) {
-
 }

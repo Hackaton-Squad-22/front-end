@@ -1,5 +1,4 @@
 const removeCurso = async (nomeConteudo, idConteudo) => {
-  console.log(idConteudo);
   const confirmacao = confirm(
     `Deseja realmente remover o conteúdo ${nomeConteudo}?`
   );

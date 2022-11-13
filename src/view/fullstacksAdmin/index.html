@@ -43,7 +43,7 @@
       </div>
     </div>
 
-    <dialog id="modal" >
+    <dialog id="modal-adicionar" >
       <h2 class="text-center">Adicionar conteúdo</h2>
       <form method="dialog">
         <label for="titulo">Título do conteúdo</label>
@@ -73,7 +73,40 @@
         </datalist>
         <button type="submit" class="btn-adicionar">Adiconar conteúdo</button>
       </form>
-      <button class="fechar-modal">x</button>   
+      <button class="add-fechar-modal">x</button>   
+    </dialog>
+
+    <dialog id="modal-editar" >
+      <h2 class="text-center">Adicionar conteúdo</h2>
+      <form method="dialog">
+        <label for="titulo">Título do conteúdo</label>
+        <input type="text" class="edit-conteudo-titulo">
+        <label for="titulo">Duração</label>
+        <input type="text" class="edit-conteudo-duracao" placeholder="00:00:00">
+        <label for="titulo">Tipo de conteúdo</label>
+        <input type="text" class="edit-conteudo-tipo" list="opcoes-conteudo">
+          <datalist id="opcoes-conteudo">
+            <option value="Curso" selected="true"></option>
+            <option value="Vídeo"></option>
+            <option value="Livro"></option>
+            <option value="Podcast"></option>
+            <option value="Glossário"></option>
+            <option value="Live"></option>
+          </datalist>
+        <label for="titulo">Autor do conteúdo</label>
+        <input type="text" class="edit-conteudo-autor">
+        <label for="titulo">URL do conteúdo</label>
+        <input type="text" class="edit-conteudo-url">
+        <label for="titulo">Modulo do conteúdo</label>
+        <input type="text" class="edit-conteudo-modulo" list="opcoes-modulo">
+        <datalist id="opcoes-modulo">
+          <option value="inicio" selected="true"></option>
+          <option value="conceitos-basicos"></option>
+          <option value="opcional"></option>
+        </datalist>
+        <button type="submit" class="btn-editar">Editar conteúdo</button>
+      </form>
+      <button class="edit-fechar-modal">x</button>   
     </dialog>
 
     <img src="/src/view/images/adiciona-icon.svg" class="adiciona-curso" alt="Ícone de adicionar cursos">

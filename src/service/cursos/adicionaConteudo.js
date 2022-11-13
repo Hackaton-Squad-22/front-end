@@ -1,9 +1,9 @@
-import adicionarCursoFs from "../conteudosAdmin/adicionarCursoFs.js";
+import adicionarConteudoFs from "../conteudosAdmin/adicionarConteudoFs.js";
 
 const adicionaConteudo = () => {
-  const modal = document.querySelector("#modal");
+  const modal = document.querySelector("#modal-adicionar");
   const abrirModal = document.querySelector(".adiciona-curso");
-  const fecharModal = document.querySelector(".fechar-modal");
+  const fecharModal = document.querySelector(".add-fechar-modal");
   const submit = document.querySelector(".btn-adicionar");
 
   abrirModal.addEventListener("click", () => {
@@ -16,8 +16,7 @@ const adicionaConteudo = () => {
 
   submit.addEventListener("click", async (e) => {
     e.preventDefault()
-    await adicionarCursoFs("https://squad22-hackathon.herokuapp.com/fullstacks");
-    
+    await adicionarConteudoFs("https://squad22-hackathon.herokuapp.com/fullstacks");
   });
 };
 
