@@ -1,7 +1,7 @@
-import pesquisaConteudos from "../service/conteudos/pesquisaConteudos.js";
+import pesquisaConteudos from "../service/conteudosUser/pesquisaConteudos.js";
 import pesquisaCursosIniciados from "../service/cursos/pesquisaCursosIniciados.js";
 import enviaCursos from "../service/cursos/enviaCursos.js";
-import displayConteudos from "../service/conteudos/displayConteudos.js";
+import displayConteudosUser from "../service/conteudosUser/displayConteudosUser.js";
 
 const baseUrl = "https://squad22-hackathon.herokuapp.com";
 
@@ -15,7 +15,12 @@ window.addEventListener("DOMContentLoaded", async () => {
   const cursosUxIniciados = response[3] || [];
 
   //Display Gdos conteudos na página
-  displayConteudos(dados, cursosFsIniciados, cursosQaIniciados, cursosUxIniciados)
+  displayConteudosUser(
+    dados,
+    cursosFsIniciados,
+    cursosQaIniciados,
+    cursosUxIniciados
+  );
 
   // Controle de conteúdos clicados pelo usuário para cadastro no seu banco
   const conteudos = document.querySelectorAll(".conteudo");
@@ -34,9 +39,9 @@ window.addEventListener("DOMContentLoaded", async () => {
         if (conteudo.dataset.trilha === "Full Stacks") {
           cursosFsIniciados.push(conteudo.dataset.id);
         } else if (conteudo.dataset.trilha === "QA") {
-          cursosQaIniciados.push(conteudo.dataset.id)
+          cursosQaIniciados.push(conteudo.dataset.id);
         } else if (conteudo.dataset.trilha === "UX") {
-          cursosUxIniciados.push(conteudo.dataset.id)
+          cursosUxIniciados.push(conteudo.dataset.id);
         }
         // Envia para o back-end o novo array de cursos interagidos pelo usuário
         await enviaCursos(
@@ -45,8 +50,9 @@ window.addEventListener("DOMContentLoaded", async () => {
           cursosQaIniciados,
           cursosUxIniciados
         );
-/*         displayConteudos(dados, cursosFsIniciados, cursosQaIniciados, cursosUxIniciados)
- */      }
+        /*         displayConteudos(dados, cursosFsIniciados, cursosQaIniciados, cursosUxIniciados)
+         */
+      }
     });
   }
 });

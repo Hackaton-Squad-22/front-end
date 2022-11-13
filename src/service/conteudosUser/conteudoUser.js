@@ -1,10 +1,12 @@
 import conteudoFinalizado from "./conteudoFinalizado.js";
 import verificaTipoConteudo from "./verificaTipoConteudo.js";
 
-const conteudo = (entrada, cursosIniciados) => {
+const conteudoUser = (entrada, cursosIniciados) => {
   const imagem = verificaTipoConteudo(entrada);
   const conteudo = `
-  <a data-id="${entrada._id}" data-trilha="${entrada.trilha}" class="conteudo" href="${entrada.url}" target="_black">
+  <a data-id="${entrada._id}" data-trilha="${
+    entrada.trilha
+  }" class="conteudo" href="${entrada.url}" target="_black">
     <div class="conteudo-container">
       <img src="/src/view/images/${imagem}" alt="Ícone de ${entrada.tipo}">
       <div class="info-conteudo-container">
@@ -24,4 +26,4 @@ const conteudo = (entrada, cursosIniciados) => {
   return conteudo;
 };
 
-export default conteudo;
+export default conteudoUser;
