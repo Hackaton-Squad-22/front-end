@@ -43,15 +43,15 @@
       </div>
     </div>
 
-    <dialog id="modal">
+    <dialog id="modal" >
       <h2 class="text-center">Adicionar conteúdo</h2>
-      <form>
+      <form method="dialog">
         <label for="titulo">Título do conteúdo</label>
-        <input type="text" class="titulo">
+        <input type="text" class="add-conteudo-titulo">
         <label for="titulo">Duração</label>
-        <input type="text" class="duracao" placeholder="00:00:00">
+        <input type="text" class="add-conteudo-duracao" placeholder="00:00:00">
         <label for="titulo">Tipo de conteúdo</label>
-        <input type="text" class="tipo" list="opcoes-conteudo">
+        <input type="text" class="add-conteudo-tipo" list="opcoes-conteudo">
           <datalist id="opcoes-conteudo">
             <option value="Curso" selected="true"></option>
             <option value="Vídeo"></option>
@@ -60,10 +60,12 @@
             <option value="Glossário"></option>
             <option value="Live"></option>
           </datalist>
-          <label for="titulo">URL do conteúdo</label>
-        <input type="text" class="url">
+        <label for="titulo">Autor do conteúdo</label>
+        <input type="text" class="add-conteudo-autor">
+        <label for="titulo">URL do conteúdo</label>
+        <input type="text" class="add-conteudo-url">
         <label for="titulo">Modulo do conteúdo</label>
-        <input type="text" class="modulo" list="opcoes-modulo">
+        <input type="text" class="add-conteudo-modulo" list="opcoes-modulo">
         <datalist id="opcoes-modulo">
           <option value="inicio" selected="true"></option>
           <option value="conceitos-basicos"></option>
