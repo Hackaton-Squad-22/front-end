@@ -1,0 +1,21 @@
+.body{
+    height: 100vh;
+    width: 100vw;
+}
+
+.form-wrapper {
+    border: solid 1px #000;
+    border-radius: 5px;
+    padding: 32px;
+    width: 400px;
+}
+
+.button-login{
+    background-color: #FE4400;
+    border: solid 1px #FE4400;
+}
+
+.button-login:hover{
+    background-color: #00C19C;
+    border: solid 1px #00C19C;
+}
