@@ -1,23 +1,23 @@
-@import url('https://fonts.googleapis.com/css?family=Familjen+Grotesk:400');
+@import url("https://fonts.googleapis.com/css?family=Familjen+Grotesk:400");
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Familjen Grotesk', sans-serif;
+  font-family: "Familjen Grotesk", sans-serif;
 }
 
 .header {
   display: flex;
   justify-content: space-around;
-  background: #FDFCFF;
+  background: #fdfcff;
   backdrop-filter: blur(37.5px);
   align-items: center;
   width: 100vw;
   height: 128px;
 }
 
-.header-navbar{
+.header-navbar {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -25,7 +25,14 @@
   height: 33px;
 }
 
-a, a:link, a:visited, a:hover {
+.now-openned {
+  font-weight: bold;
+}
+
+a,
+a:link,
+a:visited,
+a:hover {
   text-decoration: none;
 }
 
@@ -36,30 +43,18 @@ a, a:link, a:visited, a:hover {
   padding: 0px;
 }
 
-.img-discord{
+.img-discord {
   width: 32px;
   height: 24px;
   margin-right: 10px;
 }
 
-.logo {
-  
-}
-
 .greetings {
   display: flex;
   align-items: center;
-  /* justify-content: center;
-  width: 116px;
-  height: 24px; */
-
-/* H3 */
-
   font-style: normal;
   font-weight: 400;
   font-size: var(--fonteTitulo5);
   line-height: 24px;
-
-/* identical to box height, or 77% */
   color: #000000;
 }
