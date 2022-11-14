@@ -35,7 +35,6 @@
 }
 
 .barra-progresso-wrapper{
-  background-color: #99989B;
   box-sizing: border-box;
   flex-basis: 12px;
   margin-bottom: 24px;
@@ -45,6 +44,7 @@
 }
 
 .barra-progresso{
+  background-color: #99989B;
   height: inherit;
   position: absolute;
   height: 12px;
@@ -52,15 +52,15 @@
   width: 100%;
 }
 
-.barra-progresso-fs{
+.barra-progresso-wrapper-fs{
   background-color: #29B6F6;
 }
 
-.barra-progresso-ux{
+.barra-progresso-wrapper-ux{
   background-color: #FD733C;
 }
 
-.barra-progresso-qa{
+.barra-progresso-wrapper-qa{
   background-color: #C9BC1F;
 }
 

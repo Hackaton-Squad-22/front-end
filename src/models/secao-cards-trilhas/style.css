@@ -79,7 +79,7 @@
 }
 
 .barra-progresso-wrapper{
-  background-color: #EAEAEA;
+  background-color: #BDBAE9;
   box-sizing: border-box;
   flex-basis: 12px;
   overflow: hidden;
@@ -88,7 +88,7 @@
 }
 
 .barra-progresso{
-  background-color: #BDBAE9;
+  background-color: #EAEAEA;
   height: inherit;
   position: absolute;
   height: 12px;
