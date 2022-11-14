@@ -72,6 +72,7 @@
 }
 
 .botao-adicionar-conteudo{
+    align-self: flex-end;
     height: 40px;
     width: 176px;
 }
