@@ -35,7 +35,7 @@
 }
 
 .secao-hackathons{
-  background: url(images/bg-desafios-passados.png);
+  background: url(/src/view/images/bg-desafios-passados.png);
   background-size: cover;
   display: flex;
   justify-content: center;
