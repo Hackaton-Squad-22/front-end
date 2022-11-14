@@ -1,4 +1,4 @@
-@import url(/src/view/css/global.css);
+@import url('../../view/css/global.css');
 
 hr {
   width: 92% !important;
