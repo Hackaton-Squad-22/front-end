@@ -1,7 +1,7 @@
 import pesquisaConteudos from "../../service/conteudosUser/pesquisaConteudos.js";
 import pesquisaCursosIniciados from "../../service/cursos/pesquisaCursosIniciados.js";
 import enviaCursos from "../../service/cursos/enviaCursos.js";
-import displayConteudosUser from "../../service/conteudosUser/displayConteudosUser.js";
+import displayConteudosUserUx from "../../service/conteudosUser/displayConteudosUserUx.js";
 
 const baseUrl = "https://squad22-hackathon.herokuapp.com";
 
@@ -16,7 +16,7 @@ window.addEventListener("DOMContentLoaded", async () => {
   const cursosUxIniciados = response[3] || [];
 
   //Display Gdos conteudos na página
-  displayConteudosUser(
+  displayConteudosUserUx(
     dados,
     cursosUxIniciados
   );

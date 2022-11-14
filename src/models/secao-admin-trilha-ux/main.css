@@ -1,6 +1,5 @@
-@import url(/src/view/css/global.css);
-
-* {
+*,
+body {
   margin: 0;
 }
 
@@ -8,8 +7,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  text-decoration: none !important;
-  color: #000 !important;
   width: 100%;
   margin: auto;
   border-top: 1px solid #000;
@@ -31,7 +28,7 @@
 }
 
 .conteudo ul li {
- font-family: var(--fonteFamilyTexto);
+  font-family: var(--fonteFamilyTexto);
   margin-right: 8px;
   list-style: none;
   font-size: 14px;
@@ -40,10 +37,17 @@
 .conteudo-container {
   display: flex;
   line-height: 16px;
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+
+.conteudo-container:hover {
+  color: rgba(0, 0, 0, 0.65);
 }
 
 .accordion {
-  margin: 72px 180px 112px 290px;
+  margin: 72px 180px 0 290px;
 }
 
 .modulo-inicio,
@@ -70,10 +74,6 @@
   outline: 1px solid #000;
 }
 
-.status {
-  margin-left: 32px;
-}
-
 .primeiro-accordion-ux {
   background-color: #FFF3E0 !important;
 }
@@ -87,9 +87,77 @@
   background-color: #FFCC80 !important;
 }
 
+.edicao-container {
+  display: flex;
+}
+
+.editar-icon,
+.excluir-icon {
+  cursor: pointer;
+  margin-left: 24px;
+}
+
+.adiciona-curso {
+  display: inline-block;
+  margin-left: 80%;
+  right: 208px;
+  cursor: pointer;
+  margin-top: 8px;
+  margin-bottom: 64px;
+}
+
+#modal-adicionar,
+#modal-editar {
+  padding: 30px;
+  min-width: 60ch;
+  border: 0;
+  border-radius: 16px;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
+  margin: auto;
+  position: relative;
+}
+
+#modal-adicionar form,
+#modal-editar form {
+  display: flex;
+  flex-direction: column;
+  margin: 16px;
+}
+
+#modal-adicionar form input,
+#modal-editar form input {
+  padding-left: 8px;
+  margin-bottom: 8px;
+}
+
+#modal-adicionar::backdrop,
+#modal-editar::backdrop {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.btn-adicionar,
+.btn-editar {
+  width: 40%;
+  margin: 16px auto 0;
+  border: none;
+  border-radius: 16px;
+  padding: 4px 0;
+  background-color: #8054f0;
+  color: #fff;
+}
+
+.add-fechar-modal,
+.edit-fechar-modal {
+  position: absolute;
+  top: 4px;
+  right: 8px;
+  border: none;
+  background-color: #fff;
+  font-size: 18px;
+}
+
 /* Transição até o IPad */
 @media (max-width: 1439px) {
-
 }
 
 @media (max-width: 1120px) {
@@ -103,11 +171,11 @@
   }
 
   .conteudo ul li {
-     font-size: 10px;
-     line-height: 16px;
-   }
+    font-size: 10px;
+    line-height: 16px;
+  }
 
-   .accordion {
+  .accordion {
     margin: 72px 110px 0 109px;
   }
 
@@ -130,5 +198,4 @@
 
 /* Tamanho mobile */
 @media (max-width: 470px) {
-
 }
