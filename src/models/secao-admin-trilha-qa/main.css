@@ -93,13 +93,18 @@ body {
   margin-left: 24px;
 }
 
+.wrapper-adiciona-curso{
+  box-sizing: border-box;
+  display: flex;
+  margin: 0 180px 64px 290px;
+  justify-content: flex-end;
+  padding: 0 32px 0 24px;
+  width: auto;
+}
+
 .adiciona-curso {
-  display: inline-block;
-  margin-left: 80%;
-  right: 208px;
-  cursor: pointer;
-  margin-top: 8px;
-  margin-bottom: 64px;
+  border: none;
+  padding: 0;
 }
 
 #modal-adicionar,
@@ -181,6 +186,10 @@ body {
     padding: 0 32px 0 24px !important;
   }
 
+  .wrapper-adiciona-curso{
+    margin: 0 110px 64px 109px;
+  }
+
   .status {
     transform: scale(0.8);
   }
@@ -189,6 +198,10 @@ body {
 @media (max-width: 680px) {
   .accordion {
     margin: 72px 35px 0 35px;
+  }
+
+  .wrapper-adiciona-curso{
+    margin: 0 35px 64px 35px;
   }
 }
 
