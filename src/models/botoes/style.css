@@ -1,6 +1,5 @@
 @import url(../global.css);
 
-
 .botao{
   align-items: center;
   border: none;
@@ -13,7 +12,7 @@
   height: 40px;
   justify-content: center;
   text-decoration: none;
-  width: 108px;
+  width: 144px;
 }
 
 .botao-primario{
@@ -34,6 +33,11 @@
 .botao-secundario .botao-secundario:hover {
   color: #FFFFFF;
   background-color: red;
+}
+
+.botao-contorno:hover{
+  color: #49454F;
+  background-color: #FFFFFF;
 }
 
 .botao-contorno{
