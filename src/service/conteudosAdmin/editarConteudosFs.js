@@ -27,7 +27,7 @@ const editarConteudosFs = async (baseUrl = "") => {
     moduloFinal.innerHTML = moduloAtual
 
 
-/*     try {
+    try {
       await fetch(baseUrl, {
         method: "POST",
         headers: {
@@ -49,7 +49,7 @@ const editarConteudosFs = async (baseUrl = "") => {
       if (err) {
         console.error("Ocorreu um erro ao enviar os dados de cursos.");
       }
-    } */
+    }
   }
 
 };

@@ -1,4 +1,4 @@
-@import url('../../view/css/global.css');
+@import url(../../../src/view/css/global.css);
 
 hr {
   width: 92% !important;
@@ -36,7 +36,7 @@ a {
 
 .secao-superior-home {
   height: 455px;
-  background-image: url(/src/view/images/bg-home.svg);
+  background-image: url(../../../src/view/images/bg-home.svg);
   margin-bottom: 40px;
 }
 
@@ -67,18 +67,6 @@ a {
   line-height: 32px;
   margin-bottom: 54px;
 }
-
-/* .secao-media-home a {
-  font-size: 17px;
-  font-family: var(--fonteFamilyTexto);
-  line-height: 21px;
-  color: #fff;
-  background-color: var(--roxoDiscord);
-  border-radius: 120px;
-  border: none;
-  padding: 10px 19px;
-  cursor: pointer;
-} */
 
 .secao-media-home a:hover {
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);

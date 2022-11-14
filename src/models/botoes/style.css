@@ -1,4 +1,4 @@
-@import url('../../view/css/global.css');
+@import url(../../../src/view/css/global.css);
 
 .botao{
   align-items: center;
@@ -59,7 +59,7 @@
 }
 
 .botao-discord::before{
-  content: url(../../view/images/botao-discord.svg);
+  content: url(../../../src/view/images/botao-discord.svg);
   margin-right: 8px;
   height: 22px;
   width: 28px;
@@ -92,7 +92,7 @@
   }
   
   .botao-discord::before{
-    content: url(../../view/images/botao-discord-mobile.png);
+    content: url(../../../src/view/images/botao-discord-mobile.png);
     margin-right: 4px;
     height: 12px;
     width: 15px;

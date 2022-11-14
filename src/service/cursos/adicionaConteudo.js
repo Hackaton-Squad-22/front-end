@@ -4,7 +4,7 @@ const adicionaConteudo = () => {
   const modal = document.querySelector("#modal-adicionar");
   const abrirModal = document.querySelector(".adiciona-curso");
   const fecharModal = document.querySelector(".add-fechar-modal");
-  const submit = document.querySelector(".btn-adicionar");
+  const submit = document.querySelector(".botao-adicionar-conteudo");
 
   abrirModal.addEventListener("click", () => {
     modal.showModal();
