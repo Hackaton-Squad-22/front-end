@@ -71,6 +71,11 @@
   width: 140px;
 }
 
+.botao-adicionar-conteudo{
+    height: 40px;
+    width: 176px;
+}
+
 @media (max-width: 430px){
   .botao{
     border-radius: 55px;
@@ -96,5 +101,10 @@
     height: 32px;
     width: 115px;
   }
+
+  .botao-adicionar-conteudo{
+    height: 40px;
+    width: 176px;
+}
 }
 
