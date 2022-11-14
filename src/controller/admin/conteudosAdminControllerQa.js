@@ -1,10 +1,8 @@
-import displayConteudosAdmin from "../service/conteudosAdmin/displayConteudosAdmin.js";
-import pesquisaConteudos from "../service/conteudosUser/pesquisaConteudos.js";
-import adicionaConteudo from "../service/cursos/adicionaConteudo.js";
-import editaConteudo from "../service/cursos/editaConteudo.js";
-import removeCurso from "../service/cursos/removeCurso.js";
-
-const baseUrl = "https://squad22-hackathon.herokuapp.com";
+import displayConteudosAdmin from "../../service/conteudosAdmin/displayConteudosAdmin.js";
+import pesquisaConteudos from "../../service/conteudosUser/pesquisaConteudos.js";
+import adicionaConteudo from "../../service/cursos/adicionaConteudo.js";
+import editaConteudo from "../../service/cursos/editaConteudo.js";
+import removeCurso from "../../service/cursos/removeCurso.js";
 
 window.addEventListener("DOMContentLoaded", async () => {
   // Função para adicionar novos conteúdos à trilha
@@ -12,7 +10,7 @@ window.addEventListener("DOMContentLoaded", async () => {
 
   // Pesquisa todos os cursos cadastrados no banco de dados da trilha
   const dados = await pesquisaConteudos(
-    "https://squad22-hackathon.herokuapp.com/fullstacks"
+    "https://squad22-hackathon.herokuapp.com/qa"
   );
 
   //Display dos conteudos na página
