@@ -1,8 +1,11 @@
 @import url(../global.css);
 
+
 .botao{
   align-items: center;
+  border: none;
   border-radius: 100px;
+  cursor: pointer;
   display: flex;
   font-family: var(--fonteFamilyTexto);
   font-size: 16px;
@@ -18,9 +21,19 @@
   background-color: #91FFC9;
 }
 
+.botao-primario .botao-primario:hover{
+  color: #49454F;
+  background-color: #91FFC9;
+}
+
 .botao-secundario{
   color: #FFFFFF;
   background-color: #8054F0;
+}
+
+.botao-secundario .botao-secundario:hover {
+  color: #FFFFFF;
+  background-color: red;
 }
 
 .botao-contorno{

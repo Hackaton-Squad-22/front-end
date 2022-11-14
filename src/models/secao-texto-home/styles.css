@@ -68,7 +68,7 @@ a {
   margin-bottom: 54px;
 }
 
-.secao-media-home a {
+/* .secao-media-home a {
   font-size: 17px;
   font-family: var(--fonteFamilyTexto);
   line-height: 21px;
@@ -78,7 +78,7 @@ a {
   border: none;
   padding: 10px 19px;
   cursor: pointer;
-}
+} */
 
 .secao-media-home a:hover {
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
