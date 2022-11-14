@@ -30,25 +30,6 @@
   margin: 0 152px;
 }
 
-.botao{
-  align-items: center;
-  display: flex;
-  font-family: var(--fonteFamilyTexto);
-  font-weight: 700;
-  justify-content: center;
-  text-decoration: none;
-
-  border-radius: 100px;
-  font-size: 16px;
-  height: 40px;
-  width: 108px;
-}
-
-.botao-secundario{
-  color: #FFFFFF;
-  background-color: #8054F0;
-}
-
 @media (max-width: 1024px){
   .secao-programa-formacao{
     align-items: center;
