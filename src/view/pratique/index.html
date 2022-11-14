@@ -9,10 +9,27 @@
   <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../../models/secao-header/style.css">
   <link rel="stylesheet" href="../../models/secao-pratique-hackathon/style.css">
+  <link rel="stylesheet" href="../../models/secao-texto-pratique/style.css">
   <link rel="stylesheet" href="../../models/secao-texto-home/styles.css">
+  <link rel="stylesheet" href="../../models/secao-footer/style.css">
 </head>
 <body>
+  <header class="header">
+    <a href="#"><img class="logo" src="/src/view/images/logo evolution.png" alt="logo da orange evolution" /></a>
+    <nav class="header-navbar">  
+        <a class="header-navbar-link" href="">trilhas</a>
+        <a class="header-navbar-link" href="">desafios</a>
+        <a class="header-navbar-link" href="">
+          <img class="img-discord" src="/src/view/images/discord-icon-black.svg" alt="logo do discord"/>
+            junte-se a comunidade
+        </a>
+    </nav>
+    <div class="greetings">
+      <p>Olá, Yan!</p>
+    </div>   
+  </header>
   <main>
     <section class="secao-titulo-hackathons">
       <div class="container-titulo">
@@ -95,7 +112,14 @@
       </ul>
     </section>
     <hr />
-
+    <section class="secao-programa-formacao">
+      <div class="container-texto">  
+      <h2>Programa de Formação da FCamara</h2>
+        <p>Uma iniciativa do Grupo FCamara para contratar você que está iniciando a sua carreira na tecnologia, confira quando será a próxima edição.</p>
+      </div>
+      <a href="#" role="button" class="botao botao-secundario">Saiba mais</a>
+    </section>
+    <hr />
     <section class="secao-final-home text-center">
       <h2>Junte-se a nossa <br class="br desabilitado" />comunidade no Discord</h2>
       <p>
@@ -133,6 +157,19 @@
     </section>
     <hr />
   </main>
+  <footer class="footer">
+    <div class="container-footer">
+      <div class="footer-text">
+        <p>Orange Juice Evolution</p>
+        <p>&copy; 2022 FCamara Formacao e Consultoria</p>
+      </div>
+      <div class="nav-footer">
+        <a href="https://www.linkedin.com/company/orangejuicetech/"><img src="/src/view/images/linkedin-icon.svg" alt="Ícone do LinkedIn"></a>
+        <a href="https://www.twitch.tv/orangejuice_tech"><img src="/src/view/images/twitch-icon.svg" alt="Ícone do Twitter"></a>
+        <a href="https://www.youtube.com/c/OrangeJuicefc"><img src="/src/view/images/youtube-icon.svg" alt="Ícone do YouTube"></a>         
+      </div>
+    </div>
+  </footer>
   <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
