@@ -45,12 +45,23 @@
 }
 
 .barra-progresso{
-  background-color: #29B6F6;
   height: inherit;
   position: absolute;
   height: 12px;
   transform: translateX(-100%);
   width: 100%;
+}
+
+.barra-progresso-fs{
+  background-color: #29B6F6;
+}
+
+.barra-progresso-ux{
+  background-color: #FD733C;
+}
+
+.barra-progresso-qa{
+  background-color: #C9BC1F;
 }
 
 .progresso-numero{
