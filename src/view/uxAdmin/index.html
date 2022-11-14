@@ -42,8 +42,8 @@
         Duração total: 30h | Nível: Iniciante
       </p>
       <section class="barra-progresso-wrapper">
-        <span class="barra-progresso" data-progresso="barra"></span>
-        <p class="progresso-numero" data-progresso="numero">0%</p>
+        <span class="barra-progresso barra-progresso-ux" data-progresso-barra="ux"></span>
+        <p class="progresso-numero" data-progresso-numero="ux">0%</p>
       </section>
       <p class="descricao-trilha">
         Um UX Designer é responsável por garantir o equilíbrio entre o
@@ -244,6 +244,10 @@
       </div>
     </div>
   </footer>
+  <script type="module" src="/src/controller/admin/conteudosAdminControllerUx.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/src/models/secao-texto-home/main.js"></script>
+  <script src="../../service/conteudosUser/barraDeProgresso.js" type="module"></script>
 </body>
 
 <script src="../../../src/models/secao-texto-home/main.js"></script>
