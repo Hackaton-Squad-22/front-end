@@ -92,7 +92,7 @@
   height: inherit;
   position: absolute;
   height: 12px;
-  transform: translateX(-80%);
+  transform: translateX(-100%) translateX(50%);
   width: 100%;
 }
 
