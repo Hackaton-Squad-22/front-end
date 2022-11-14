@@ -1,7 +1,7 @@
-@import url(/src/view/css/global.css);
+@import url(../../../src/view/css/global.css);
 
 .secao-titulo-trilha{
-  background: url(images/fs-fundo.png);
+  background: url(../../../src/models/secao-titulo-trilha-fs/images/fs-fundo.png);
   background-size: cover;
   box-sizing: border-box;
   display: grid;
@@ -35,7 +35,6 @@
 }
 
 .barra-progresso-wrapper{
-  background-color: #99989B;
   box-sizing: border-box;
   flex-basis: 12px;
   margin-bottom: 24px;
@@ -45,12 +44,24 @@
 }
 
 .barra-progresso{
-  background-color: #29B6F6;
+  background-color: #99989B;
   height: inherit;
   position: absolute;
   height: 12px;
   transform: translateX(-100%);
   width: 100%;
+}
+
+.barra-progresso-wrapper-fs{
+  background-color: #29B6F6;
+}
+
+.barra-progresso-wrapper-ux{
+  background-color: #FD733C;
+}
+
+.barra-progresso-wrapper-qa{
+  background-color: #C9BC1F;
 }
 
 .progresso-numero{
@@ -110,23 +121,23 @@
 }
 
 .icone-artigos{
-  content: url(images/artigos.svg);
+  content: url(../../../src/models/secao-titulo-trilha-fs/images/artigos.svg);
 }
 
 .icone-cursos{
-  content: url(images/cursos.png);
+  content: url(../../../src/models/secao-titulo-trilha-fs/images/cursos.png);
 }
 
 .icone-glossarios{
-  content: url(images/glossarios.png);
+  content: url(../../../src/models/secao-titulo-trilha-fs/images/glossarios.png);
 }
 
 .icone-videos{
-  content: url(images/videos.svg);
+  content: url(../../../src/models/secao-titulo-trilha-fs/images/videos.svg);
 }
 
 .icone-livros{
-  content: url(images/livros.png);
+  content: url(../../../src/models/secao-titulo-trilha-fs/images/livros.png);
 }
 
 @media (max-width: 1024px){

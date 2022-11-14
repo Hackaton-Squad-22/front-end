@@ -2,8 +2,8 @@ import procuraDados from "../service/login/procuraDados.js";
 import VerificacaoLogin from "../service/login/verificaLogin.js";
 
 const form = document.querySelector("form");
-const email = document.querySelector(".mail");
-const password = document.querySelector(".password");
+const email = document.querySelector(".login-email");
+const password = document.querySelector(".login-senha");
 
 form.addEventListener("submit", async (event) => {
   event.preventDefault();
@@ -16,9 +16,9 @@ form.addEventListener("submit", async (event) => {
     const role = await procuraDados(email.value, password.value, erros);
     if (erros.length == 0) {
       if (role == "user") {
-        location.replace("../user/index.html");
+        location.replace("../home/index.html");
       } else if (role == "admin") {
-        location.replace("../admin/index.html");
+        location.replace("../homeAdmin/index.html");
       } else {
         console.error("Parece que houve um problema");
       }

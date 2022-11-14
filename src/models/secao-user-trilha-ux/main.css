@@ -1,4 +1,4 @@
-@import url(/src/view/css/global.css);
+@import url(../../../src/view/css/global.css);
 
 * {
   margin: 0;
@@ -84,7 +84,7 @@
   background-color: #FFCC80 !important;
 }
 .quarto-accordion-ux {
-  background-color: #FFCC80 !important;
+  background-color: #FFBC57 !important;
 }
 
 /* Transição até o IPad */

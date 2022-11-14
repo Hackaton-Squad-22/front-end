@@ -84,7 +84,7 @@ body {
   background-color: #FFCC80 !important;
 }
 .quarto-accordion-ux {
-  background-color: #FFCC80 !important;
+  background-color: #FFBC57 !important;
 }
 
 .edicao-container {
@@ -120,6 +120,16 @@ body {
   box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
   margin: auto;
   position: relative;
+}
+
+#modal-adicionar h2{
+  font-family: var(--fonteFamilyTitulo);
+  font-size: 32px;
+}
+
+#modal-adicionar label{
+  font-family: var(--fonteFamilyTexto);
+  font-size: 16px;
 }
 
 #modal-adicionar form,

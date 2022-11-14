@@ -4,30 +4,30 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trilha Full Stacks</title>
+  <title>Trilha Full Stack</title>
   <link
       href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk&family=Source+Sans+Pro&display=swap"
       rel="stylesheet"
   />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="/src/view/css/bootstrap.css" />
-  <link rel="stylesheet" href="/src/view/css/global.css" />
-  <link rel="stylesheet" href="/src/models/secao-header/style.css">
-  <link rel="stylesheet" href="/src/models/secao-texto-home/styles.css">
-  <link rel="stylesheet" href="/src/models/secao-titulo-trilha-fs/style.css">
-  <link rel="stylesheet" href="/src/models/secao-footer/style.css">
-  <link rel="stylesheet" href="/src/models/secao-user-trilha-fs/main.css" />
-  <link rel="stylesheet" href="../../models/botoes/style.css">
+  <link rel="stylesheet" href="../../../src/view/css/bootstrap.css" />
+  <link rel="stylesheet" href="../../../src/view/css/global.css" />
+  <link rel="stylesheet" href="../../../src/models/secao-header/style.css">
+  <link rel="stylesheet" href="../../../src/models/secao-texto-home/styles.css">
+  <link rel="stylesheet" href="../../../src/models/secao-titulo-trilha-fs/style.css">
+  <link rel="stylesheet" href="../../../src/models/secao-footer/style.css">
+  <link rel="stylesheet" href="../../../src/models/secao-user-trilha-fs/main.css" />
+  <link rel="stylesheet" href="../../../src/models/botoes/style.css">
 </head>
 <body>
   <header class="header">
-    <a href="/src/view/home/index.html"><img class="logo" src="/src/view/images/logo evolution.png" alt="logo da orange evolution" /></a>
+    <a href="../../../src/view/home/index.html"><img class="logo" src="../../../src/view/images/logo evolution.png" alt="logo da orange evolution" /></a>
     <nav class="header-navbar">  
-        <a class="header-navbar-link" href="">trilhas</a>
-        <a class="header-navbar-link" href="/src/view/pratique/index.html">desafios</a>
+        <a class="header-navbar-link" href="../../../src/view/home/index.html">trilhas</a>
+        <a class="header-navbar-link" href="../../../src/view/pratique/index.html">desafios</a>
         <a class="header-navbar-link" href="https://discord.gg/orangejuicetech" target="_blank">
-          <img class="img-discord" src="/src/view/images/discord-icon-black.svg" alt="logo do discord"/>
+          <img class="img-discord" src="../../../src/view/images/discord-icon-black.svg" alt="logo do discord"/>
             junte-se a comunidade
         </a>
     </nav>
@@ -41,9 +41,9 @@
       <div class="container-central">
         <h2 class="titulo-trilha">Full Stack</h2>
         <p class="card-info-texto-trilha">Duração total: 50h | Nível: Iniciante</p>
-        <section class="barra-progresso-wrapper">
-          <span class="barra-progresso" data-progresso="barra"></span>
-          <p class="progresso-numero" data-progresso="numero">0%</p>
+        <section class="barra-progresso-wrapper barra-progresso-wrapper-fs">
+          <span class="barra-progresso" data-progresso-barra="fullstack"></span>
+          <p class="progresso-numero" data-progresso-numero="fullstack">0%</p>
         </section>
         <p class="descricao-trilha">Um Desenvolvedor Full Stack utiliza linguagens modernas para solucionar problemas em diversas áreas do mercado e está sempre pronto para encarar desafios que agregam em seu conhecimento profissional. Essa trilha foi montada para que você possa iniciar a sua carreira na tecnologia. Você terá acesso a vídeos, lives, artigos, apostilas e até cursos gratuitos, além desses conteúdos serem da Orange Juice, de parceiros e empresas que confiamos.</p>
         <ul class="lista-tipo-conteudo">
@@ -117,7 +117,7 @@
         aprendeu durante a trilha para resolver às problemáticas e até montar
         seu próprio case.
       </p>
-      <a href="/src/view/pratique/index.html" role="button" class="botao botao-secundario">Saiba mais</a>
+      <a href="../../../src/view/pratique/index.html" role="button" class="botao botao-secundario">Saiba mais</a>
     </section>
     <hr />
   
@@ -129,25 +129,25 @@
       </p>
       <div class="discord-container">
         <div class="discord-container-section">
-          <img src="/src/view/images/duvidas-icon.svg" alt="ícone de duvidas" />
+          <img src="../../../src/view/images/duvidas-icon.svg" alt="ícone de duvidas" />
           <div class="discord-container-texto">
             Tire dúvidas<br />
             da trilha
           </div>
         </div>
         <div class="discord-container-section">
-          <img src="/src/view/images/conexoes-icon.svg" alt="ícone de conexões" />
+          <img src="../../../src/view/images/conexoes-icon.svg" alt="ícone de conexões" />
           <div class="discord-container-texto">Faça <br />conexões</div>
         </div>
         <div class="discord-container-section">
-          <img src="/src/view/images/desenvolva-icon.svg" alt="ícone de projetos" />
+          <img src="../../../src/view/images/desenvolva-icon.svg" alt="ícone de projetos" />
           <div class="discord-container-texto">Desenvolva <br />projetos</div>
         </div>
       </div>
       <a href="https://discord.gg/orangejuicetech" role="button" class="botao botao-discord" target="_blank">Acesse o Discord</a>
       <a href="" class="btn-up-top">
         <img
-          src="/src/view/images/subir-up-página.svg"
+          src="../../../src/view/images/subir-up-página.svg"
           alt="Ícone de flecha para voltar ao topo da página"
         />
       </a>
@@ -163,15 +163,16 @@
         <p>&copy; 2022 FCamara Formacao e Consultoria</p>
       </div>
       <div class="nav-footer">
-        <a href="https://www.linkedin.com/company/orangejuicetech/"><img src="/src/view/images/linkedin-icon.svg" alt="Ícone do LinkedIn"></a>
-        <a href="https://www.twitch.tv/orangejuice_tech"><img src="/src/view/images/twitch-icon.svg" alt="Ícone do Twitter"></a>
-        <a href="https://www.youtube.com/c/OrangeJuicefc"><img src="/src/view/images/youtube-icon.svg" alt="Ícone do YouTube"></a>       
+        <a href="https://www.linkedin.com/company/orangejuicetech/"><img src="../../../src/view/images/linkedin-icon.svg" alt="Ícone do LinkedIn"></a>
+        <a href="https://www.twitch.tv/orangejuice_tech"><img src="../../../src/view/images/twitch-icon.svg" alt="Ícone do Twitter"></a>
+        <a href="https://www.youtube.com/c/OrangeJuicefc"><img src="../../../src/view/images/youtube-icon.svg" alt="Ícone do YouTube"></a>       
       </div>
     </div>
   </footer>
 </body>
 
-<script type="module" src="/src/controller/user/conteudosUserControllerFs.js"></script>
+<script src="../../../src/service/conteudosUser/barraDeProgresso.js" type="module"></script>
+<script type="module" src="../../../src/controller/user/conteudosUserControllerFs.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="/src/models/secao-texto-home/main.js"></script>
+<script src="../../../src/models/secao-texto-home/main.js"></script>
 </html>

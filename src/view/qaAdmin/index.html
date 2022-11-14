@@ -4,35 +4,34 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trilha QA</title>
+  <title>Trilha Quality Assurance</title>
   <link
       href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk&family=Source+Sans+Pro&display=swap"
       rel="stylesheet"
   />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="/src/view/css/bootstrap.css" />
-  <link rel="stylesheet" href="/src/view/css/global.css" />
-  <link rel="stylesheet" href="/src/models/secao-header/style.css">
-  <link rel="stylesheet" href="/src/models/secao-texto-home/styles.css">
-  <link rel="stylesheet" href="/src/models/secao-titulo-trilha-qa/style.css">
-  <link rel="stylesheet" href="/src/models/secao-footer/style.css">
-  <link rel="stylesheet" href="/src/models/secao-admin-trilha-qa/main.css"/>
-  <link rel="stylesheet" href="../../models/botoes/style.css">
+  <link rel="stylesheet" href="../../../src/view/css/bootstrap.css" />
+  <link rel="stylesheet" href="../../../src/view/css/global.css" />
+  <link rel="stylesheet" href="../../../src/models/secao-header/style.css">
+  <link rel="stylesheet" href="../../../src/models/secao-texto-home/styles.css">
+  <link rel="stylesheet" href="../../../src/models/secao-titulo-trilha-qa/style.css">
+  <link rel="stylesheet" href="../../../src/models/secao-footer/style.css">
+  <link rel="stylesheet" href="../../../src/models/secao-admin-trilha-qa/main.css"/>
+  <link rel="stylesheet" href="../../../src/models/botoes/style.css">
 </head>
 <body>
   <header class="header">
-    <a href="/src/view/homeAdmin/index.html"><img class="logo" src="/src/view/images/logo evolution.png" alt="logo da orange evolution" /></a>
+    <a href="../../../src/view/homeAdmin/index.html"><img class="logo" src="../../../src/view/images/logo evolution.png" alt="logo da orange evolution" /></a>
     <nav class="header-navbar">  
-      <a class="header-navbar-link" href="">trilhas</a>
-      <a class="header-navbar-link" href="/src/view/pratique/index.html">desafios</a>
+      <a class="header-navbar-link" href="../../../src/view/homeAdmin/index.html">trilhas</a>
       <a class="header-navbar-link" href="https://discord.gg/orangejuicetech" target="_blank">
-        <img class="img-discord" src="/src/view/images/discord-icon-black.svg" alt="logo do discord"/>
+        <img class="img-discord" src="../../../src/view/images/discord-icon-black.svg" alt="logo do discord"/>
             junte-se a comunidade
         </a>
     </nav>
     <div class="greetings">
-      <p>Olá, Yan!</p>
+      <p>Olá, Admin!</p>
     </div>   
   </header>
 
@@ -42,9 +41,9 @@
       <p class="card-info-texto-trilha">
         Duração total: 180h | Nível: Iniciante
       </p>
-      <section class="barra-progresso-wrapper">
-        <span class="barra-progresso" data-progresso="barra"></span>
-        <p class="progresso-numero" data-progresso="numero">0%</p>
+      <section class="barra-progresso-wrapper barra-progresso-wrapper-qa">
+        <span class="barra-progresso" data-progresso-barra="qa"></span>
+        <p class="progresso-numero" data-progresso-numero="qa">0%</p>>
       </section>
       <p class="descricao-trilha">
         Um profissional ou uma equipe de Quality Assurance tem a função de
@@ -137,14 +136,14 @@
       <input type="text" class="add-conteudo-autor">
       <label for="titulo">URL do conteúdo</label>
       <input type="text" class="add-conteudo-url">
-      <label for="titulo">Modulo do conteúdo</label>
+      <label for="titulo">Módulo do conteúdo</label>
       <input type="text" class="add-conteudo-modulo" list="opcoes-modulo">
       <datalist id="opcoes-modulo">
         <option value="inicio" selected="true"></option>
         <option value="conceitos-basicos"></option>
         <option value="opcional"></option>
       </datalist>
-      <button type="submit" class="btn-adicionar">Adiconar conteúdo</button>
+      <button type="submit" class="botao botao-secundario botao-adicionar-conteudo">Adicionar conteúdo</button>
     </form>
     <button class="add-fechar-modal">x</button>   
   </dialog>
@@ -170,7 +169,7 @@
       <input type="text" class="edit-conteudo-autor">
       <label for="titulo">URL do conteúdo</label>
       <input type="text" class="edit-conteudo-url">
-      <label for="titulo">Modulo do conteúdo</label>
+      <label for="titulo">Módulo do conteúdo</label>
       <input type="text" class="edit-conteudo-modulo" list="opcoes-modulo">
       <datalist id="opcoes-modulo">
         <option value="inicio" selected="true"></option>
@@ -184,27 +183,11 @@
 
   <div class="wrapper-adiciona-curso">
     <button class="adiciona-curso">
-      <img src="/src/view/images/adiciona-icon.svg" class="adiciona-curso" alt="Ícone de adicionar cursos">
+      <img src="../../../src/view/images/adiciona-icon.svg" class="adiciona-curso" alt="Ícone de adicionar cursos">
     </button>
   </div>
 
-    <hr>
-  
-    <section class="secao-media-home">
-      <h2>
-        Pratique com Desafios<br class="br desabilitado" />
-        dos Hackathons passados
-      </h2>
-      <p>
-        Escolha entre os desafios passados do Programa de Formação da FCamara,
-        veja como os participantes solucionaram e utilize as técnicas que
-        aprendeu durante a trilha para resolver às problemáticas e até montar
-        seu próprio case.
-      </p>
-      <a href="/src/view/pratique/index.html" role="button" class="botao botao-secundario">Secundário</a>
-    </section>
-    <hr />
-  
+    <hr>  
     <section class="secao-final-home text-center">
       <h2>Junte-se a nossa <br class="br desabilitado" />comunidade no Discord</h2>
       <p>
@@ -213,18 +196,18 @@
       </p>
       <div class="discord-container">
         <div class="discord-container-section">
-          <img src="/src/view/images/duvidas-icon.svg" alt="ícone de duvidas" />
+          <img src="../../../src/view/images/duvidas-icon.svg" alt="ícone de duvidas" />
           <div class="discord-container-texto">
             Tire dúvidas<br />
             da trilha
           </div>
         </div>
         <div class="discord-container-section">
-          <img src="/src/view/images/conexoes-icon.svg" alt="ícone de conexões" />
+          <img src="../../../src/view/images/conexoes-icon.svg" alt="ícone de conexões" />
           <div class="discord-container-texto">Faça <br />conexões</div>
         </div>
         <div class="discord-container-section">
-          <img src="/src/view/images/desenvolva-icon.svg" alt="ícone de projetos" />
+          <img src="../../../src/view/images/desenvolva-icon.svg" alt="ícone de projetos" />
           <div class="discord-container-texto">Desenvolva <br />projetos</div>
         </div>
       </div>
@@ -232,7 +215,7 @@
   
       <a href="" class="btn-up-top">
         <img
-          src="/src/view/images/subir-up-página.svg"
+          src="../../../src/view/images/subir-up-página.svg"
           alt="Ícone de flecha para voltar ao topo da página"
         />
       </a>
@@ -248,15 +231,16 @@
         <p>&copy; 2022 FCamara Formacao e Consultoria</p>
       </div>
       <div class="nav-footer">
-        <a href="https://www.linkedin.com/company/orangejuicetech/"><img src="/src/view/images/linkedin-icon.svg" alt="Ícone do LinkedIn"></a>
-        <a href="https://www.twitch.tv/orangejuice_tech"><img src="/src/view/images/twitch-icon.svg" alt="Ícone do Twitter"></a>
-        <a href="https://www.youtube.com/c/OrangeJuicefc"><img src="/src/view/images/youtube-icon.svg" alt="Ícone do YouTube"></a>       
+        <a href="https://www.linkedin.com/company/orangejuicetech/"><img src="../../../src/view/images/linkedin-icon.svg" alt="Ícone do LinkedIn"></a>
+        <a href="https://www.twitch.tv/orangejuice_tech"><img src="../../../src/view/images/twitch-icon.svg" alt="Ícone do Twitter"></a>
+        <a href="https://www.youtube.com/c/OrangeJuicefc"><img src="../../../src/view/images/youtube-icon.svg" alt="Ícone do YouTube"></a>       
       </div>
     </div>
   </footer>
 </body>
 
-<script type="module" src="/src/controller/admin/conteudosAdminControllerQa.js"></script>
+<script src="../../../src/models/secao-texto-home/main.js"></script>
+<script src="../../../src/service/conteudosUser/barraDeProgresso.js" type="module"></script>
+<script type="module" src="../../../src/controller/admin/conteudosAdminControllerQa.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="/src/models/secao-texto-home/main.js"></script>
 </html>

@@ -8,7 +8,7 @@ const conteudoUser = (entrada, cursosIniciados) => {
     entrada.trilha
   }" class="conteudo" href="${entrada.url}" target="_black">
     <div class="conteudo-container">
-      <img src="/src/view/images/${imagem}" alt="Ícone de ${entrada.tipo}">
+      <img src="../../../src/view/images/${imagem}" alt="Ícone de ${entrada.tipo}">
       <div class="info-conteudo-container">
         <h6>${entrada.curso}</h6>
         <ul>
@@ -17,7 +17,7 @@ const conteudoUser = (entrada, cursosIniciados) => {
         </ul>
       </div>
     </div>
-    <img src="/src/view/images/${conteudoFinalizado(
+    <img src="../../../src/view/images/${conteudoFinalizado(
       cursosIniciados,
       entrada._id
     )}" class="status" alt="Ícone de status do conteúdo">
