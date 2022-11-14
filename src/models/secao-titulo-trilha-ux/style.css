@@ -1,7 +1,7 @@
 @import url(../../../src/view/css/global.css);
 
 .secao-titulo-trilha{
-  background: url(../../../src/view/images/ux-fundo.png);
+  background: url(../../../src/models/secao-titulo-trilha-ux/images/ux-fundo.svg);
   background-size: cover;
   box-sizing: border-box;
   display: grid;
