@@ -1,7 +1,7 @@
-@import url(../css/global.css);
+@import url(../../../src/view/css/global.css);
 
 body {
-  background-image: url(../images/login-desk.png);
+  background-image: url(../../../src/view/images/login-desk.svg);
   background-repeat: no-repeat;
 }
 
@@ -120,7 +120,7 @@ body {
 
 @media (max-width: 744px) {
   body {
-    background-image: url(../images/login-ipad.png);
+    background-image: url(../../../src/view/images/login-ipad.svg);
   }
 }
 
@@ -173,6 +173,6 @@ body {
 
 @media (max-width: 430px) {
     body {
-        background-image: url(../images/login-mobile.png);
+        background-image: url(../../../src/view/images/login-mobile.svg);
       }
 }

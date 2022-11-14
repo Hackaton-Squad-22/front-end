@@ -121,23 +121,23 @@
 }
 
 .icone-artigos{
-  content: url(../../../src/view/images/artigos.svg);
+  content: url(../../../src/models/secao-titulo-trilha-fs/images/artigos.svg);
 }
 
 .icone-cursos{
-  content: url(../../../src/view/images/cursos.png);
+  content: url(../../../src/models/secao-titulo-trilha-fs/images/cursos.png);
 }
 
 .icone-glossarios{
-  content: url(../../../src/view/images/glossarios.png);
+  content: url(../../../src/models/secao-titulo-trilha-fs/images/glossarios.png);
 }
 
 .icone-videos{
-  content: url(../../../src/view/images/videos.svg);
+  content: url(../../../src/models/secao-titulo-trilha-fs/images/videos.svg);
 }
 
 .icone-livros{
-  content: url(../../../src/view/images/livros.png);
+  content: url(../../../src/models/secao-titulo-trilha-fs/images/livros.png);
 }
 
 @media (max-width: 1024px){
