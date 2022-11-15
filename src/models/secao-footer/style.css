@@ -11,21 +11,28 @@
   display: flex;
   justify-content: center;
   background: linear-gradient(180deg, #FFFFFF 25.68%, #F4EFFF 100%);
-
   width: 100vw;
-  height: 153px;
+  height: 130px;
 }
 
 .container-footer{
   display: flex;
   justify-content: space-between;
-  width: 1300px;
+  width: 1340px;
   height: 70px;
-  margin-top: 18px;
+  margin: 10px 10px;
   padding: 5px;
 }
 
 .footer-text {
+  font-size: 13px;
+}
+
+.footer-text p {
+  margin-bottom: 0;
+}
+
+#logo-text {
   font-size: 20px;
 }
 
@@ -41,4 +48,56 @@
 
 .btn-up-top{
   margin-top: 18px;
+}
+
+
+/* Tamanho IPad */
+@media screen and (max-width: 744px) {
+
+  .footer {
+    height: 80px;
+  }
+
+  .footer-text {
+    width: 250px;
+    height: 31px;
+    font-size: 12px;
+  }
+
+  #logo-text {
+    font-size: 13px;
+  }
+
+  .footer-text p {
+    margin-bottom: 0;
+  }
+
+  .footer img {
+    width: 22px;
+    height: 22px;
+  }
+
+  .nav-footer {
+    width: 132px;
+    height: 39px;
+  }
+  
+}
+
+/* Tamanho mobile */
+@media (max-width: 470px) {
+
+  .footer {
+    height: 76px;
+  }
+
+  .footer-text {
+    width: 250px;
+    height: 31px;
+    font-size: 12px;
+  }
+
+  #logo-text {
+    font-size: 12px;
+  }
 }

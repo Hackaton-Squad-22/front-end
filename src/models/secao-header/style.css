@@ -25,28 +25,32 @@
   height: 33px;
 }
 
-.now-openned {
-  font-weight: bold;
-}
-
 a,
 a:link,
 a:visited,
 a:hover {
+
   text-decoration: none;
 }
 
 .header-navbar-link {
   display: flex;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
   color: #000000;
   padding: 0px;
+  height: 24px;
 }
 
 .img-discord {
   width: 32px;
   height: 24px;
   margin-right: 10px;
+}
+
+.texto-comunidade {
+  margin-bottom: 0;
 }
 
 .greetings {
@@ -58,3 +62,59 @@ a:hover {
   line-height: 24px;
   color: #000000;
 }
+
+/* Transição até o IPad */
+@media (max-width: 1440px) {
+ 
+}
+
+@media (max-width: 960px) {
+ 
+}
+
+/* Tamanho IPad */
+@media screen and (max-width: 744px) {
+  .header {
+    width: 100%;
+    font-size: 16px;
+  }
+  .header-navbar {
+    width: 272px;
+    height: 24px;
+  }
+  .img-discord{
+    width: 21px;
+    height: 16px;
+    margin-right: 5px;
+  }
+
+  .logo {
+    width: 61px;
+    height: 61px;
+  }
+
+  .greetings {
+    display: block;
+    font-size: 20px;
+    height: 24px;
+  }
+  
+}
+
+/* Tamanho mobile */
+@media (max-width: 470px) {
+  .header {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .logo {
+    width: 41px;
+    height: 41px;
+  }
+
+  .greetings {
+    font-size: 12px;
+  }
+}
+
