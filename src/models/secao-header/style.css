@@ -25,6 +25,11 @@
   height: 33px;
 }
 
+.header-navbar-admin {
+  justify-content: center;
+  gap: 10%;
+}
+
 a,
 a:link,
 a:visited,
@@ -174,3 +179,11 @@ a:hover {
     width: 188px;
   }
 }
+
+@media (max-width: 430px) {
+  .header-navbar-admin {
+    justify-content: center;
+    gap: 8%;
+  }
+}
+
