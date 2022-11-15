@@ -14,9 +14,9 @@
   <link rel="stylesheet" href="../../../src/view/css/global.css" />
   <link rel="stylesheet" href="../../../src/view/css/bootstrap.css" />
   <link rel="stylesheet" href="../../../src/models/secao-header/style.css">
+  <link rel="stylesheet" href="../../../src/models/secao-footer/style.css">
   <link rel="stylesheet" href="../../../src/models/secao-texto-home/styles.css">
   <link rel="stylesheet" href="../../../src/models/secao-titulo-trilha-ux/style.css">
-  <link rel="stylesheet" href="../../../src/models/secao-footer/style.css">
   <link rel="stylesheet" href="../../../src/models/secao-user-trilha-ux/main.css"/>
   <link rel="stylesheet" href="../../../src/models/botoes/style.css">
 </head>
@@ -24,17 +24,20 @@
   <header class="header">
     <a href="../../../src/view/home/index.html"><img class="logo" src="../../../src/view/images/logo evolution.png" alt="logo da orange evolution" /></a>
     <nav class="header-navbar">  
-      <a class="header-navbar-link" href="../../../src/view/home/index.html">trilhas</a>
-      <a class="header-navbar-link" href="../../../src/view/pratique/index.html">desafios</a>
-      <a class="header-navbar-link" href="https://discord.gg/orangejuicetech" target="_blank">
-        <img class="img-discord" src="../../../src/view/images/discord-icon-black.svg" alt="logo do discord"/>
-            junte-se a comunidade
+        <a class="header-navbar-link" href="../../../src/view/home/index.html">trilhas</a>
+        <a class="header-navbar-link" href="../../../src/view/pratique/index.html">desafios</a>
+        <a class="header-navbar-link" href="https://discord.gg/orangejuicetech" target="_blank">
+          <img class="img-discord" src="../../../src/view/images/discord-icon-black.svg" alt="logo do discord"/>
+          <p class="texto-comunidade">junte-se a comunidade</p>
         </a>
     </nav>
     <div class="greetings">
       <p>Olá, Yan!</p>
+      <a href="../../../src/view//login/index.html">
+        <img src="../../../src/view/images/sair-icon.svg" alt="ícone de deslogar do usuário" class="sair-icone">
+      </a>
     </div>   
-  </header>
+</header>
 
   <section class="secao-titulo-trilha">
     <div class="container-central">
@@ -179,18 +182,19 @@
   <footer class="footer">
     <div class="container-footer">
       <div class="footer-text">
-        <h4>Orange Juice Evolution</h4>
-        <p>&copy; 2022 FCamara Formacao e Consultoria</p>
+        <p id="logo-text">Orange Juice Evolution</p>
+        <p class="marca-text">&copy; 2022 FCamara Formacao e Consultoria</p>
       </div>
       <div class="nav-footer">
         <a href="https://www.linkedin.com/company/orangejuicetech/"><img src="../../../src/view/images/linkedin-icon.svg" alt="Ícone do LinkedIn"></a>
         <a href="https://www.twitch.tv/orangejuice_tech"><img src="../../../src/view/images/twitch-icon.svg" alt="Ícone do Twitter"></a>
-        <a href="https://www.youtube.com/c/OrangeJuicefc"><img src="../../../src/view/images/youtube-icon.svg" alt="Ícone do YouTube"></a>       
+        <a href="https://www.youtube.com/c/OrangeJuicefc"><img src="../../../src/view/images/youtube-icon.svg" alt="Ícone do YouTube"></a>         
       </div>
     </div>
   </footer>
 </body>
 
+<script src="../../../src/models/secao-header/main.js"></script>
 <script src="../../../src/models/secao-texto-home/main.js"></script>
 <script src="../../../src/service/conteudosUser/barraDeProgresso.js" type="module"></script>
 <script type="module" src="../../../src/controller/user/conteudosUserControllerUx.js"></script>

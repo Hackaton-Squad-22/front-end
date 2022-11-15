@@ -21,21 +21,22 @@
   margin: 32px 70px 58px 70px;
 }
 
-.footer-text {
+#logo-text {
+  font-size: 20px;
+}
+
+.marca-text {
   font-size: 13px;
 }
 
-.footer-text p {
-  margin-bottom: 0;
-}
-
-#logo-text {
-  font-size: 20px;
+#logo-text, .marca-text {
+  margin: 0;
 }
 
 .nav-footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 172px;
 }
 
@@ -55,17 +56,14 @@
     margin: 24px 65px 24px 40px;
   }
 
-  .footer-text {
-    height: 31px;
-    font-size: 10px;
-  }
-
   #logo-text {
     font-size: 13px;
+    height: 14px;
+    margin-bottom: 4px;
   }
 
-  .footer-text p {
-    margin-bottom: 0;
+  .marca-text {
+    font-size: 10px;
   }
 
   .footer img {
@@ -85,7 +83,7 @@
     margin: 24px 32px 24px 32px;
   }
 
-  .footer-text {
+  .marca-text {
     font-size: 9px;
   }
 
