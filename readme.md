@@ -58,3 +58,11 @@ npm run dev
 - [Marcelo Lemes](https://github.com/marceloafl)
 - [Yan Gerhardt](https://www.github.com/Yangerhardt)
 - [Maria Luiza Milbradt](https://www.linkedin.com/in/maria-luiza-milbradt192778111/)
+
+
+## Preview
+
+![homepage](https://raw.githubusercontent.com/Hackaton-Squad-22/front-end/main/src/view/images/readme-home.png)
+![homepage](https://raw.githubusercontent.com/Hackaton-Squad-22/front-end/main/src/view/images/readme-cursofs1.png)
+![homepage](https://raw.githubusercontent.com/Hackaton-Squad-22/front-end/main/src/view/images/readme-cursofs2.png)
+![homepage](https://raw.githubusercontent.com/Hackaton-Squad-22/front-end/main/src/view/images/readme-hackathons.png)
