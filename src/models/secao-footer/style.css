@@ -11,17 +11,14 @@
   display: flex;
   justify-content: center;
   background: linear-gradient(180deg, #FFFFFF 25.68%, #F4EFFF 100%);
-  width: 100vw;
-  height: 130px;
+  width: 100%;
 }
 
 .container-footer{
   display: flex;
   justify-content: space-between;
-  width: 1340px;
-  height: 70px;
-  margin: 10px 10px;
-  padding: 5px;
+  width: 100%;
+  margin: 32px 70px 58px 70px;
 }
 
 .footer-text {
@@ -38,8 +35,8 @@
 
 .nav-footer {
   display: flex;
-  justify-content: space-around;
-  width: 300px;
+  justify-content: space-between;
+  width: 172px;
 }
 
 .nav-footer a {
@@ -52,16 +49,15 @@
 
 
 /* Tamanho IPad */
-@media screen and (max-width: 744px) {
+@media (max-width: 744px) {
 
-  .footer {
-    height: 80px;
+  .container-footer{
+    margin: 24px 65px 24px 40px;
   }
 
   .footer-text {
-    width: 250px;
     height: 31px;
-    font-size: 12px;
+    font-size: 10px;
   }
 
   #logo-text {
@@ -78,26 +74,22 @@
   }
 
   .nav-footer {
-    width: 132px;
-    height: 39px;
+    width: 100px;
   }
   
 }
 
 /* Tamanho mobile */
 @media (max-width: 470px) {
-
-  .footer {
-    height: 76px;
+  .container-footer{
+    margin: 24px 32px 24px 32px;
   }
 
   .footer-text {
-    width: 250px;
-    height: 31px;
-    font-size: 12px;
+    font-size: 9px;
   }
 
   #logo-text {
-    font-size: 12px;
+    font-size: 13px;
   }
 }
