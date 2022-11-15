@@ -16,7 +16,7 @@
   display: flex;
   flex-direction: column;
   grid-column-start: 3;
-  grid-column-end: 10;
+  grid-column-end: 12;
   margin: 136px 0 56px 0;
 }
 
@@ -80,6 +80,7 @@
   font-family: var(--fonteFamilyTexto);
   font-size: 22px;
   margin-bottom: 56px;
+  max-width: 752px;
 }
 
 .lista-tipo-conteudo{
