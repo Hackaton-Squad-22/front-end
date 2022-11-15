@@ -1,7 +1,7 @@
-@import url(/src/view/css/global.css);
+@import url(../../../src/view/css/global.css);
 
 .secao-titulo-trilha{
-  background: url(images/ux-fundo.png);
+  background: url(../../../src/models/secao-titulo-trilha-ux/images/ux-fundo.png);
   background-size: cover;
   box-sizing: border-box;
   display: grid;
@@ -121,27 +121,27 @@
 }
 
 .icone-artigos{
-  content: url(images/artigos.svg);
+  content: url(../../../src/models/secao-titulo-trilha-ux/images/artigos.svg);
 }
 
 .icone-cursos{
-  content: url(images/cursos.png);
+  content: url(../../../src/models/secao-titulo-trilha-ux/images/cursos.png);
 }
 
 .icone-glossarios{
-  content: url(images/glossarios.png);
+  content: url(../../../src/models/secao-titulo-trilha-ux/images/glossarios.png);
 }
 
 .icone-videos{
-  content: url(images/videos.svg);
+  content: url(../../../src/models/secao-titulo-trilha-ux/images/videos.svg);
 }
 
 .icone-livros{
-  content: url(images/livros.png);
+  content: url(../../../src/models/secao-titulo-trilha-ux/images/livros.png);
 }
 
 .icone-podcasts{
-  content: url(images/podcast.png);
+  content: url(../../../src/models/secao-titulo-trilha-ux/images/podcast.png);
 }
 
 @media (max-width: 1024px){

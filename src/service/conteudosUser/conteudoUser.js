@@ -1,4 +1,5 @@
 import conteudoFinalizado from "./conteudoFinalizado.js";
+import displayHoras from "./verificaDuracao.js";
 import verificaTipoConteudo from "./verificaTipoConteudo.js";
 
 const conteudoUser = (entrada, cursosIniciados) => {
@@ -12,7 +13,7 @@ const conteudoUser = (entrada, cursosIniciados) => {
       <div class="info-conteudo-container">
         <h6>${entrada.curso}</h6>
         <ul>
-          <li class="duracao">Duração: ${verificaDuracao(entrada.duracao)}</li>
+          <li class="duracao">Duração: ${displayHoras(entrada.duracao)}</li>
           <li li class="autor">| Produzido por: ${entrada.autor}</li>
         </ul>
       </div>

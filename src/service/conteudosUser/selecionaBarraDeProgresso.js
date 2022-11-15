@@ -1,5 +1,4 @@
 export function selecionaBarraDeProgresso(trilha){
-  console.log(trilha)
   let barraDeProgresso = '';
   if (trilha === 'Fullstacks'){
     barraDeProgresso = document.querySelector('[data-progresso-barra="fullstack"]');
