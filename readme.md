@@ -51,3 +51,4 @@ Senha: `123`
 - [Luís Seixas](https://github.com/luiseixas)
 - [Marcelo Lemes](https://github.com/marceloafl)
 - [Yan Gerhardt](https://www.github.com/Yangerhardt)
+- [Maria Luiza Milbradt](https://www.linkedin.com/in/maria-luiza-milbradt192778111/)
