@@ -21,12 +21,6 @@ E-mail: `teste@teste.com`\
 \
 Senha: `123`
 
-## Acesso local
-Para realizar o acesso local da API, basta rodar o comando:
-```
-npm run dev
-```
-
 ## Tecnologias
 
 <div>
@@ -57,4 +51,3 @@ npm run dev
 - [Luís Seixas](https://github.com/luiseixas)
 - [Marcelo Lemes](https://github.com/marceloafl)
 - [Yan Gerhardt](https://www.github.com/Yangerhardt)
-- [Maria Luiza Milbradt](https://www.linkedin.com/in/maria-luiza-milbradt192778111/)
