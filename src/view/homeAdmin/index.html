@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orange Evolution</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk&family=Source+Sans+Pro&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../../src/models/secao-header/style.css">
+  <link rel="stylesheet" href="../../../src/models/secao-texto-home/styles.css">
+  <link rel="stylesheet" href="../../../src/models/secao-cards-trilhas/style.css">
+  <link rel="stylesheet" href="../../../src/models/secao-footer/style.css">
+  <link rel="stylesheet" href="../../../src/models/botoes/style.css">
+</head>
+<body>
+  <header class="header">
+    <a href=""><img class="logo" src="../../../src/view/images/logo evolution.png" alt="logo da orange evolution" /></a>
+    <nav class="header-navbar header-navbar-admin">
+        <a class="header-navbar-link" href="">trilhas</a>
+        <a class="header-navbar-link" href="https://discord.gg/orangejuicetech" target="_blank">
+          <img class="img-discord" src="../../../src/view/images/discord-icon-black.svg" alt="logo do discord"/>
+          <p class="texto-comunidade">junte-se a comunidade</p>
+        </a>
+    </nav>
+    <div class="greetings">
+      <p>Olá, Administrador!</p>
+      <a href="../../../src/view/login/index.html">
+        <img src="../../../src/view/images/sair-icon.svg" alt="ícone de deslogar do usuário" class="sair-icone">
+      </a>
+    </div>   
+</header>
+
+  <section class="secao-superior-home text-center">
+    <h3>
+      Trilhas de estudo gratuitas <br class="br desabilitado" />para quem está começando na
+      área de tecnologia ou migrando de carreira
+    </h3>
+  </section>
+
+  <section class="escolha-trilha-secao"  data-secao="trilhas-home">
+    <h2 class="secao-titulo-trilha">Escolha sua trilha:</h2>
+    <ul class="cards-trilha-secao" data-secao="cards-home">
+      <li class="card-trilha">
+        <a href="../../../src/view/fullstacksAdmin/index.html" class="card-link">
+          <img src="../../../src/view/images/fs-grande-cor-tam1.png" class="card-imagem-trilha" alt="Desenvolvedor Full Stack">
+          <section class="card-texto-info-wrapper">
+            <h3 class="card-titulo-trilha">Desenvolvedor Full Stack</h3>
+            <p class="card-info-texto-trilha">Duração total: 50h | Nível: Iniciante</p>
+            <p class="card-texto-trilha">Um Desenvolvedor Full Stack utiliza linguagens modernas para solucionar problemas em diversas áreas do mercado e está sempre pronto para encarar desafios que agregam em seu conhecimento profissional.</p>
+          </section>
+          <div class="card-botao-wrapper">
+            <button href="#" role="button" class="botao botao-primario">Acessar</button>
+          </div>
+        </a>
+      </li>
+
+      <li class="card-trilha">
+        <a href="../../../src/view/uxAdmin/index.html" class="card-link">
+          <img src="../../../src/view/images/ux-cor-tam.png" class="card-imagem-trilha" alt="User Experience e User Interface Design">
+          <section class="card-texto-info-wrapper">
+            <h3 class="card-title card-titulo-trilha">UX/UI Designer</h3>
+            <p class="card-info-texto-trilha">Duração total: 30h | Nível: Iniciante</p>
+            <p class="card-texto-trilha">Um UX Designer é responsável por garantir o equilíbrio entre o design projetado e por atender a satisfação do cliente com o seu produto ou marca.</p>
+          </section>
+          <div class="card-botao-wrapper">
+            <button href="#" role="button" class="botao botao-primario">Acessar</button>
+          </div>
+        </a>
+      </li>
+
+      <li class="card-trilha">
+        <a href="../../../src/view/qaAdmin/index.html" class="card-link">
+          <img src="../../../src/view/images/qa-cor-tam.png" class="card-imagem-trilha" alt="Quality Assurance">
+          <section class="card-texto-info-wrapper">
+            <h3 class="card-title card-titulo-trilha">Quality Assurance</h3>
+            <p class="card-info-texto-trilha">Duração total: 180h | Nível: Iniciante</p>
+            <p class="card-texto-trilha">Um profissional ou uma equipe  de Quality Assurance tem a  função de garantir a qualidade no desenvolvimento de um produto ou serviço.</p>
+          </section>
+          <div class="card-botao-wrapper">
+            <button href="#" role="button" class="botao botao-primario">Acessar</button>
+          </div>
+        </a>
+      </li>  
+    </ul>
+  </section>
+
+  <hr />
+  <section class="secao-final-home text-center">
+    <h2>Junte-se a nossa <br class="br desabilitado" />comunidade no Discord</h2>
+    <p>
+      A comunidade da Orange Juice é feita para e por você,<br />
+      que está começando ou migrando para a área de tecnologia.
+    </p>
+    <div class="discord-container">
+      <div class="discord-container-section">
+        <img src="../../../src/view/images/duvidas-icon.svg" alt="ícone de duvidas" />
+        <div class="discord-container-texto text-center">
+          Tire dúvidas<br />
+          da trilha
+        </div>
+      </div>
+      <div class="discord-container-section">
+        <img src="../../../src/view/images/conexoes-icon.svg" alt="ícone de conexões" />
+        <div class="discord-container-texto text-center">Faça <br />conexões</div>
+      </div>
+      <div class="discord-container-section">
+        <img src="../../../src/view/images/desenvolva-icon.svg" alt="ícone de projetos" />
+        <div class="discord-container-texto text-center">Desenvolva <br />projetos</div>
+      </div>
+    </div>
+    <a href="https://discord.gg/orangejuicetech" role="button" class="botao botao-discord" target="_blank">Acesse o Discord</a>
+
+    <a href="" class="btn-up-top">
+      <img
+        src="../../../src/view/images/subir-up-página.svg"
+        alt="Ícone de flecha para voltar ao topo da página"
+      />
+    </a>
+  </section>
+  <hr />
+  <footer class="footer">
+    <div class="container-footer">
+      <div class="footer-text">
+        <p id="logo-text">Orange Juice Evolution</p>
+        <p class="marca-text">&copy; 2022 FCamara Formacao e Consultoria</p>
+      </div>
+      <div class="nav-footer">
+        <a href="https://www.linkedin.com/company/orangejuicetech/" target="_blank"><img src="../../../src/view/images/linkedin-icon.svg" alt="Ícone do LinkedIn"></a>
+        <a href="https://www.twitch.tv/orangejuice_tech" target="_blank"><img src="../../../src/view/images/twitch-icon.svg" alt="Ícone do Twitter"></a>
+        <a href="https://www.youtube.com/c/OrangeJuicefc" target="_blank"><img src="../../../src/view/images/youtube-icon.svg" alt="Ícone do YouTube"></a>             
+      </div>
+    </div>
+  </footer>
+</body>
+
+<script src="../../../src/models/secao-header/main.js"></script>
+<script src="../../../src/models/secao-texto-home/main.js"></script>
+<script src="../../../src/service/conteudosUser/barraDeProgresso.js" type="module"></script>
+</html>

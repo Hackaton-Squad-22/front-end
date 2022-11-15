@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Orange Juice</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+  </head>
+
+  <body>
+    <div class="login-page">
+      <section class="login-text">
+        <p>
+          Trilhas de estudo gratuitas para quem está começando na área de
+          tecnologia ou migrando de carreira
+        </p>
+      </section>
+      <section class="login-page-container">
+        <div class="login-container">
+          <div class="login-img-container">
+            <img src="../images/logo-evolution.svg" alt="Logo da Orange Juice Evolution" class="orange-logo">
+          </div>
+          <h3>Bem vindo</h3>
+          <form class="login-form">
+            <label for="email" class="label">E-mail</label>
+            <input type="text" placeholder="nomedeusuario@gmail.com" class="login-email">
+            <div class="erro-email"></div>
+            <label for="password" class="label">Senha</label>
+            <input type="password" placeholder="senha" class="login-senha">
+            <div class="erro-password"></div>
+            <input type="submit" value="Entrar" class="btn-login">
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <script type="module" src="../../../src/controller/loginController.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

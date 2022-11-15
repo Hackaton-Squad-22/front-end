@@ -1,0 +1,177 @@
+@import url(../../../src/view/css/global.css);
+
+body {
+  background-image: url(../../../src/view/images/login-desk.png);
+  background-repeat: no-repeat;
+}
+
+.login-page {
+  display: flex;
+}
+
+.login-text {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-text p {
+  width: 70%;
+  font-size: 38px;
+  font-family: var(--fonteFamilyTitulo);
+  line-height: 48px;
+  text-align: center;
+}
+
+.login-page-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(13px);
+  border-radius: 48px;
+  padding: 42px 112px 124px 112px;
+}
+
+.login-img-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.login-container h3 {
+  font-size: 38px;
+  font-family: var(--fonteFamilyTitulo);
+  line-height: 48px;
+  text-align: center;
+  margin: 56px 0 16px 0;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form .label {
+  font-size: 20px;
+  line-height: 24px;
+  font-family: var(--fonteFamilyTitulo);
+  margin: 32px 0 16px 0;
+}
+
+.login-email,
+.login-senha {
+  width: 416px;
+  border: none;
+  padding: 16px 0 16px 24px;
+}
+
+.login-email::placeholder,
+.login-senha::placeholder {
+  font-size: 20px;
+  line-height: 24px;
+  font-family: var(--fonteFamilyTexto);
+  color: #bcbec0;
+}
+
+.login-email:focus,
+.login-senha:focus {
+  outline: none;
+}
+
+.btn-login {
+  margin-top: 72px;
+  background-color: #8054f0;
+  font-size: 25px;
+  line-height: 24px;
+  font-family: var(--fonteFamilyTitulo);
+  color: #fff;
+  padding: 13px 0;
+  border: none;
+  border-radius: 35px;
+}
+
+.erro-email,
+.erro-password {
+  padding: 4px 0 0 24px;
+  font-family: var(--fonteFamilyTexto);
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(255, 0, 0, 0.747);
+}
+
+@media (max-width: 1160px) {
+  .login-text {
+    display: none;
+  }
+
+  .login-container {
+    padding: 42px 91px 124px 91px;
+  }
+}
+
+@media (max-width: 744px) {
+  body {
+    background-image: url(../../../src/view/images/login-ipad.png);
+  }
+}
+
+@media (max-width: 620px) {
+  .orange-logo {
+    transform: scale(0.85);
+  }
+
+  .login-container {
+    padding: 42px 16px 40px 16px;
+  }
+
+  .login-container h3 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .login-form .label {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .login-email,
+  .login-senha {
+    width: 328px;
+    border: none;
+    padding: 10px 0 10px 16px;
+  }
+
+  .btn-login {
+    margin-top: 56px;
+    font-size: 20px;
+    line-height: 19px;
+  }
+
+  .login-email::placeholder,
+  .login-senha::placeholder {
+    font-size: 13px;
+    line-height: 19px;
+  }
+
+  .erro-email,
+  .erro-password {
+    font-size: 14px;
+    line-height: 19px;
+    padding: 4px 0 0 16px;
+  }
+}
+
+@media (max-width: 430px) {
+  body {
+    background-image: url(../../../src/view/images/login-mobile.png);
+  }
+}

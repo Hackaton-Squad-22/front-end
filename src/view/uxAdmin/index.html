@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trilha UX/UI Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk&family=Source+Sans+Pro&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="../../../src/view/css/bootstrap.css" />
+  <link rel="stylesheet" href="../../../src/view/css/global.css" />
+  <link rel="stylesheet" href="../../../src/models/secao-header/style.css">
+  <link rel="stylesheet" href="../../../src/models/secao-texto-home/styles.css">
+  <link rel="stylesheet" href="../../../src/models/secao-titulo-trilha-ux/style.css">
+  <link rel="stylesheet" href="../../../src/models/secao-footer/style.css">
+  <link rel="stylesheet" href="../../../src/models/secao-admin-trilha-ux/main.css"/>
+  <link rel="stylesheet" href="../../../src/models/botoes/style.css">
+</head>
+<body>
+  <header class="header">
+    <a href="../../../src/view/homeAdmin/index.html"><img class="logo" src="../../../src/view/images/logo evolution.png" alt="logo da orange evolution" /></a>
+    <nav class="header-navbar">  
+        <a class="header-navbar-link" href="../../../src/view/homeAdmin/index.html">trilhas</a>
+        <a class="header-navbar-link" href="https://discord.gg/orangejuicetech" target="_blank">
+          <img class="img-discord" src="../../../src/view/images/discord-icon-black.svg" alt="logo do discord"/>
+          <p class="texto-comunidade">junte-se a comunidade</p>
+        </a>
+    </nav>
+    <div class="greetings">
+      <p>Olá, Administrador!</p>
+      <a href="../../../src/view/login/index.html">
+        <img src="../../../src/view/images/sair-icon.svg" alt="ícone de deslogar do usuário" class="sair-icone">
+      </a>
+    </div>   
+</header>
+
+  <section class="secao-titulo-trilha">
+    <div class="container-central">
+      <h2 class="titulo-trilha">UX/UI Designer</h2>
+      <p class="card-info-texto-trilha">
+        Duração total: 30h | Nível: Iniciante
+      </p>
+      <p class="descricao-trilha">
+        Um UX Designer é responsável por garantir o equilíbrio entre o
+        design projetado e por atender a satisfação do cliente com o seu
+        produto, plataforma ou marca. Essa trilha foi montada para que você
+        possa iniciar a sua carreira na tecnologia. Você terá acesso a
+        vídeos, lives, artigos, apostilas e até cursos gratuitos, além
+        desses conteúdos serem da Orange Juice, de parceiros e empresas que
+        confiamos.
+      </p>
+      <ul class="lista-tipo-conteudo">
+        <li>
+          <span class="icone-artigos"></span>
+          <p>Artigos</p>
+        </li>
+        <li>
+          <span class="icone-cursos"></span>
+          <p>Cursos</p>
+        </li>
+        <li>
+          <span class="icone-glossarios"></span>
+          <p>Glossários</p>
+        </li>
+        <li>
+          <span class="icone-videos"></span>
+          <p>Vídeos</p>
+        </li>
+        <li>
+          <span class="icone-livros"></span>
+          <p>Livros</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  
+  <div class="accordion" id="accordionExample" data-trilha="qa">
+    <div class="accordion-item">
+      <h4 class="accordion-header" id="headingOne">
+        <button class="accordion-button primeiro-accordion-ux" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          O início
+        </button>
+      </h4>
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div class="accordion-body modulo-inicio"></div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h4 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed segundo-accordion-ux" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Fundamentos de UX
+        </button>
+      </h4>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+        <div class="accordion-body modulo-fundamentos-ux"></div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h4 class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed terceiro-accordion-ux" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Fundamentos de UI
+        </button>
+      </h4>
+      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+        <div class="accordion-body modulo-fundamentos-ui"></div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h4 class="accordion-header" id="headingFour">
+        <button class="accordion-button collapsed quarto-accordion-ux" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          Opcional
+        </button>
+      </h4>
+      <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+        <div class="accordion-body modulo-opcional"></div>
+      </div>
+    </div>
+  </div>
+
+  <dialog id="modal-adicionar" >
+    <h2 class="text-center">Adicionar conteúdo</h2>
+    <form method="dialog">
+      <label for="titulo">Título do conteúdo</label>
+      <input type="text" class="add-conteudo-titulo">
+      <label for="titulo">Duração</label>
+      <input type="text" class="add-conteudo-duracao" placeholder="00:00:00">
+      <label for="titulo">Tipo de conteúdo</label>
+      <input type="text" class="add-conteudo-tipo" list="opcoes-conteudo">
+        <datalist id="opcoes-conteudo">
+          <option value="Curso" selected="true"></option>
+          <option value="Vídeo"></option>
+          <option value="Livro"></option>
+          <option value="Podcast"></option>
+          <option value="Glossário"></option>
+          <option value="Live"></option>
+        </datalist>
+      <label for="titulo">Autor do conteúdo</label>
+      <input type="text" class="add-conteudo-autor">
+      <label for="titulo">URL do conteúdo</label>
+      <input type="text" class="add-conteudo-url">
+      <label for="titulo">Módulo do conteúdo</label>
+      <input type="text" class="add-conteudo-modulo" list="opcoes-modulo">
+      <datalist id="opcoes-modulo">
+        <option value="inicio" selected="true"></option>
+        <option value="conceitos-basicos"></option>
+        <option value="opcional"></option>
+      </datalist>
+      <button type="submit" class="botao botao-secundario botao-adicionar-conteudo">Adicionar conteúdo</button>
+    </form>
+    <button class="add-fechar-modal">x</button>   
+  </dialog>
+
+  <dialog id="modal-editar" >
+    <h2 class="text-center">Adicionar conteúdo</h2>
+    <form method="dialog">
+      <label for="titulo">Título do conteúdo</label>
+      <input type="text" class="edit-conteudo-titulo">
+      <label for="titulo">Duração</label>
+      <input type="text" class="edit-conteudo-duracao" placeholder="00:00:00">
+      <label for="titulo">Tipo de conteúdo</label>
+      <input type="text" class="edit-conteudo-tipo" list="opcoes-conteudo">
+        <datalist id="opcoes-conteudo">
+          <option value="Curso" selected="true"></option>
+          <option value="Vídeo"></option>
+          <option value="Livro"></option>
+          <option value="Podcast"></option>
+          <option value="Glossário"></option>
+          <option value="Live"></option>
+        </datalist>
+      <label for="titulo">Autor do conteúdo</label>
+      <input type="text" class="edit-conteudo-autor">
+      <label for="titulo">URL do conteúdo</label>
+      <input type="text" class="edit-conteudo-url">
+      <label for="titulo">Módulo do conteúdo</label>
+      <input type="text" class="edit-conteudo-modulo" list="opcoes-modulo">
+      <datalist id="opcoes-modulo">
+        <option value="inicio" selected="true"></option>
+        <option value="conceitos-basicos"></option>
+        <option value="opcional"></option>
+      </datalist>
+      <button type="submit" class="btn-editar">Editar conteúdo</button>
+    </form>
+    <button class="edit-fechar-modal">x</button>   
+  </dialog>
+
+  <div class="wrapper-adiciona-curso">
+    <button class="adiciona-curso">
+      <img src="../../../src/view/images/adiciona-icon.svg" class="adiciona-curso" alt="Ícone de adicionar cursos">
+    </button>
+  </div>
+
+    <hr> 
+    <section class="secao-final-home text-center">
+      <h2>Junte-se a nossa <br class="br desabilitado" />comunidade no Discord</h2>
+      <p>
+        A comunidade da Orange Juice é feita para e por você,<br />
+        que está começando ou migrando para a área de tecnologia.
+      </p>
+      <div class="discord-container">
+        <div class="discord-container-section">
+          <img src="../../../src/view/images/duvidas-icon.svg" alt="ícone de duvidas" />
+          <div class="discord-container-texto">
+            Tire dúvidas<br />
+            da trilha
+          </div>
+        </div>
+        <div class="discord-container-section">
+          <img src="../../../src/view/images/conexoes-icon.svg" alt="ícone de conexões" />
+          <div class="discord-container-texto">Faça <br />conexões</div>
+        </div>
+        <div class="discord-container-section">
+          <img src="../../../src/view/images/desenvolva-icon.svg" alt="ícone de projetos" />
+          <div class="discord-container-texto">Desenvolva <br />projetos</div>
+        </div>
+      </div>
+      <a href="https://discord.gg/orangejuicetech" role="button" class="botao botao-discord" target="_blank">Acesse o Discord</a>
+  
+      <a href="" class="btn-up-top">
+        <img
+          src="../../../src/view/images/subir-up-página.svg"
+          alt="Ícone de flecha para voltar ao topo da página"
+        />
+      </a>
+    </section>
+    <hr />
+
+  </main>
+
+  <footer class="footer">
+    <div class="container-footer">
+      <div class="footer-text">
+        <p id="logo-text">Orange Juice Evolution</p>
+        <p class="marca-text">&copy; 2022 FCamara Formacao e Consultoria</p>
+      </div>
+      <div class="nav-footer">
+        <a href="https://www.linkedin.com/company/orangejuicetech/" target="_blank"><img src="../../../src/view/images/linkedin-icon.svg" alt="Ícone do LinkedIn"></a>
+        <a href="https://www.twitch.tv/orangejuice_tech" target="_blank"><img src="../../../src/view/images/twitch-icon.svg" alt="Ícone do Twitter"></a>
+        <a href="https://www.youtube.com/c/OrangeJuicefc" target="_blank"><img src="../../../src/view/images/youtube-icon.svg" alt="Ícone do YouTube"></a>         
+      </div>
+    </div>
+  </footer>
+</body>
+
+<script src="../../../src/models/secao-header/main.js"></script>
+<script src="../../../src/models/secao-texto-home/main.js"></script>
+<script src="../../../src/service/conteudosUser/barraDeProgresso.js" type="module"></script>
+<script type="module" src="../../../src/controller/admin/conteudosAdminControllerUx.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</html>

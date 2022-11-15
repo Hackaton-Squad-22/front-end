@@ -1,0 +1,111 @@
+@import url(../../../src/view/css/global.css);
+
+.botao{
+  align-items: center;
+  border: none;
+  border-radius: 100px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  font-family: var(--fonteFamilyTexto);
+  font-size: 16px;
+  font-weight: 600;
+  height: 40px;
+  justify-content: center;
+  text-decoration: none;
+  width: 100px;
+}
+
+.botao-primario{
+  color: #49454F;
+  background-color: #91FFC9;
+  border: 2px solid #91FFC9;
+}
+
+.botao-primario .botao-primario:hover{
+  color: #49454F;
+  background-color: #91FFC9;
+}
+
+.botao-secundario{
+  color: #FFFFFF;
+  background-color: #8054F0;
+  border: 2px solid #8054F0;
+}
+
+.botao-secundario .botao-secundario:hover {
+  color: #FFFFFF;
+  background-color: red;
+}
+
+.botao-contorno:hover{
+  color: #49454F;
+  background-color: #FFFFFF;
+}
+
+.botao-contorno{
+  color: #49454F;
+  background-color: #FFFFFF;
+  border: 2px solid #49454F;
+}
+
+.botao-discord{
+  background-color: #8054F0;
+  box-sizing: border-box;
+  border: 2px solid #8054F0;
+  color: #FFFFFF;
+  line-height: 20px;
+  width: 188px;
+}
+
+.botao-discord::before{
+  content: url(../../../src/view/images/botao-discord.svg);
+  margin-right: 8px;
+  height: 22px;
+  width: 28px;
+}
+
+.botao-hackathon{
+  box-sizing: border-box;
+  height: 40px;
+  width: 140px;
+}
+
+.botao-adicionar-conteudo{
+    align-self: flex-end;
+    height: 40px;
+    width: 176px;
+}
+
+@media (max-width: 430px){
+  .botao{
+    border-radius: 55px;
+    cursor: pointer;
+    font-size: 12px;
+    height: 32px;
+    width: 90px;
+  }
+  
+  .botao-discord{
+    line-height: 15px;
+    width: 129px;
+  }
+  
+  .botao-discord::before{
+    content: url(../../../src/view/images/botao-discord-mobile.png);
+    margin-right: 4px;
+    height: 12px;
+    width: 15px;
+  }
+
+  .botao-hackathon{
+    height: 32px;
+    width: 115px;
+  }
+
+  .botao-adicionar-conteudo{
+    height: 40px;
+    width: 176px;
+}
+}
+

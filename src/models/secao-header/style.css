@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css?family=Familjen+Grotesk:400");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Familjen Grotesk", sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  background: #fdfcff;
+  backdrop-filter: blur(37.5px);
+  align-items: center;
+  width: 100%;
+  height: 128px;
+}
+
+.header-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  height: 33px;
+}
+
+.header-navbar-admin {
+  justify-content: center;
+  gap: 10%;
+}
+
+a,
+a:link,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+
+.header-navbar-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #000000;
+  padding: 0px;
+  font-size: 25px;
+  height: 24px;
+}
+
+.secao-discord {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-discord {
+  width: 32px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.texto-comunidade {
+  font-size: 25px;
+  margin-bottom: 0;
+}
+
+.greetings {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.greetings a {
+  display: flex;
+}
+
+.greetings p {
+  font-size: 25px;
+  line-height: 24px;
+  color: #000000;
+  margin: 0 16px 0 0;
+}
+
+/* Transição até o IPad */
+
+
+@media (max-width: 1000px) {
+  .header-navbar {
+    width: 300px;
+  }
+
+  .header-navbar-link, .greetings p, .texto-comunidade {
+    font-size: 16px;
+  }
+
+  .img-discord{
+    width: 21px;
+    height: 16px;
+    margin-right: 5px;
+  }
+
+  .logo {
+    width: 61px;
+    height: 61px;
+    margin-left: 72px;
+  }
+
+  .sair-icone {
+    height: 15px;
+    width: 20px;
+  }
+
+  .header {
+    height: 80px;
+  }
+
+}
+
+/* Tamanho IPad */
+@media (max-width: 744px) {
+  .header {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .greetings {
+    margin-right: 70px;
+  }
+
+  .greetings p {
+    margin: 0 8px 0 0;
+  }
+}
+
+@media (max-width: 690px) {
+  .greetings {
+    margin-right: 35px;
+  }
+
+  .logo {
+    margin-left: 24px;
+  }
+}
+
+@media (max-width: 605px) {
+  .header-navbar {
+    width: 250px;
+  }
+
+  .header-navbar-link, .greetings p, .texto-comunidade {
+    font-size: 12px;
+  }
+
+  .greetings {
+    margin-right: 35px;
+  }
+  
+  .logo {
+    width: 58px;
+    height: 55px;
+    margin-left: 24px;
+  }
+
+  .img-discord{
+    width: 12px;
+    height: 9px;
+  }
+
+  .sair-icone {
+    height: 9px;
+    width: 12px;
+  }
+}
+
+@media (max-width: 500px) {
+  .header-navbar {
+    width: 188px;
+  }
+}
+
+@media (max-width: 430px) {
+  .header-navbar-admin {
+    justify-content: center;
+    gap: 8%;
+  }
+}
+

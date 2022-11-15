@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Familjen+Grotesk:400');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Familjen Grotesk', sans-serif;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(180deg, #FFFFFF 25.68%, #F4EFFF 100%);
+  width: 100%;
+}
+
+.container-footer{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 32px 70px 58px 70px;
+}
+
+#logo-text {
+  font-size: 20px;
+}
+
+.marca-text {
+  font-size: 13px;
+}
+
+#logo-text, .marca-text {
+  margin: 0;
+}
+
+.nav-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 172px;
+}
+
+.nav-footer a {
+  margin-top: 5px;
+}
+
+.btn-up-top{
+  margin-top: 18px;
+}
+
+
+/* Tamanho IPad */
+@media (max-width: 744px) {
+
+  .container-footer{
+    margin: 24px 65px 24px 40px;
+  }
+
+  #logo-text {
+    font-size: 13px;
+    height: 14px;
+    margin-bottom: 4px;
+  }
+
+  .marca-text {
+    font-size: 10px;
+  }
+
+  .footer img {
+    width: 22px;
+    height: 22px;
+  }
+
+  .nav-footer {
+    width: 100px;
+  }
+  
+}
+
+/* Tamanho mobile */
+@media (max-width: 470px) {
+  .container-footer{
+    margin: 24px 32px 24px 32px;
+  }
+
+  .marca-text {
+    font-size: 9px;
+  }
+
+  #logo-text {
+    font-size: 13px;
+  }
+}
