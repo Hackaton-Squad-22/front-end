@@ -32,7 +32,7 @@
 
 .conteudo ul li {
  font-family: var(--fonteFamilyTexto);
-  margin-right: 8px;
+  margin-right: 2px;
   list-style: none;
   font-size: 14px;
 }

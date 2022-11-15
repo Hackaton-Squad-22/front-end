@@ -21,7 +21,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 677px;
+  width: 50%;
   height: 33px;
 }
 
@@ -58,7 +58,11 @@ a:hover {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
+}
 
+.greetings a {
+  display: flex;
 }
 
 .greetings p {
@@ -131,7 +135,7 @@ a:hover {
 
 @media (max-width: 605px) {
   .header-navbar {
-    width: 300px;
+    width: 250px;
   }
 
   .header-navbar-link, .greetings p {
