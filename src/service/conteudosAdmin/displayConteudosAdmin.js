@@ -12,7 +12,7 @@ const displayConteudosAdmin = (dadosArray) => {
   for (let curso of dadosArray) {
     if (curso.modulo == "inicio") {
       moduloInicio.innerHTML += conteudoAdmin(curso);
-    } else if (curso.modulo == "conceitos-basicos") {
+    } else if (curso.modulo == "conceitos-basicos" || curso.modulo == "conceitos básicos") {
       moduloConceitosBasicos.innerHTML += conteudoAdmin(curso);
     } else if (curso.modulo == "opcional") {
       moduloOpcional.innerHTML += conteudoAdmin(curso);
