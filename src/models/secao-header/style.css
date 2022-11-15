@@ -13,14 +13,14 @@
   background: #fdfcff;
   backdrop-filter: blur(37.5px);
   align-items: center;
-  width: 100vw;
+  width: 100%;
   height: 128px;
 }
 
 .header-navbar {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 677px;
   height: 33px;
 }
@@ -40,6 +40,7 @@ a:hover {
   text-decoration: none;
   color: #000000;
   padding: 0px;
+  font-size: 25px;
   height: 24px;
 }
 
@@ -55,33 +56,30 @@ a:hover {
 
 .greetings {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  font-style: normal;
-  font-weight: 400;
-  font-size: var(--fonteTitulo5);
+
+}
+
+.greetings p {
+  font-size: 25px;
   line-height: 24px;
   color: #000000;
+  margin: 0 16px 0 0;
 }
 
 /* Transição até o IPad */
-@media (max-width: 1440px) {
- 
-}
 
-@media (max-width: 960px) {
- 
-}
 
-/* Tamanho IPad */
-@media screen and (max-width: 744px) {
-  .header {
-    width: 100%;
+@media (max-width: 1000px) {
+  .header-navbar {
+    width: 300px;
+  }
+
+  .header-navbar-link, .greetings p {
     font-size: 16px;
   }
-  .header-navbar {
-    width: 272px;
-    height: 24px;
-  }
+
   .img-discord{
     width: 21px;
     height: 16px;
@@ -91,30 +89,78 @@ a:hover {
   .logo {
     width: 61px;
     height: 61px;
+    margin-left: 72px;
   }
 
-  .greetings {
-    display: block;
-    font-size: 20px;
-    height: 24px;
+  .sair-icone {
+    height: 15px;
+    width: 20px;
   }
-  
+
+  .header {
+    height: 80px;
+  }
+
 }
 
-/* Tamanho mobile */
-@media (max-width: 470px) {
+/* Tamanho IPad */
+@media (max-width: 744px) {
   .header {
     width: 100%;
     font-size: 16px;
   }
 
-  .logo {
-    width: 41px;
-    height: 41px;
+  .greetings {
+    margin-right: 70px;
   }
 
-  .greetings {
-    font-size: 12px;
+  .greetings p {
+    margin: 0 8px 0 0;
   }
 }
 
+@media (max-width: 690px) {
+  .greetings {
+    margin-right: 35px;
+  }
+
+  .logo {
+    margin-left: 24px;
+  }
+}
+
+@media (max-width: 605px) {
+  .header-navbar {
+    width: 300px;
+  }
+
+  .header-navbar-link, .greetings p {
+    font-size: 12px;
+  }
+
+  .greetings {
+    margin-right: 35px;
+  }
+  
+  .logo {
+    width: 58px;
+    height: 55px;
+    margin-left: 24px;
+  }
+
+  .img-discord{
+    width: 12px;
+    height: 9px;
+  }
+
+  .sair-icone {
+    height: 9px;
+    width: 12px;
+  }
+}
+
+@media (max-width: 500px) {
+  .header-navbar {
+    width: 188px;
+  }
+}
