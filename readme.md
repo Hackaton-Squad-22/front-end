@@ -21,6 +21,12 @@ E-mail: `teste@teste.com`\
 \
 Senha: `123`
 
+## Acesso local
+Para realizar o acesso local da API, basta rodar o comando:
+```
+npm run dev
+```
+
 ## Tecnologias
 
 <div>
