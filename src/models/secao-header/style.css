@@ -43,6 +43,12 @@ a:hover {
   height: 24px;
 }
 
+.secao-discord {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .img-discord {
   width: 32px;
   height: 24px;
@@ -50,6 +56,7 @@ a:hover {
 }
 
 .texto-comunidade {
+  font-size: 25px;
   margin-bottom: 0;
 }
 
